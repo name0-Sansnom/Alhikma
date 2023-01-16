@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+
+    padding: 0;
+}
+.top{
+    background-color: rgb(201, 125, 255);
+    display: flex;
+    height: 30px;
+    
+    /* justify-content: space-around; */
+}
+.top .mail, .phone {
+    display: flex;
+    font-size: 18px;
+    color: #fff;
+    font-family: serif;
+    margin: 5px 0 0 20px;
+}
+
+/* .top a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    
+} */
+
+.navbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.navbar ul{
+    display: flex;
+    color: rgb(174, 60, 255);
+    font-size: 18px;
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+}
+
+/* Hero banner of Swiper-Slider starting */
+
+ .swiper {
+     width: 100%;
+     height: 100%;
+ }
+
+ .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: rgb(129, 63, 63);
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+
+ .swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
