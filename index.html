@@ -1,67 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="asset/css/boxicons.min.css">
-    <link rel="stylesheet" href="asset/fonts/"> -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
+<!-- Add this for font-awesome if you have not integrated it in your work -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    
+
     <title>Document</title>
 </head>
+
 <body>
     <div class="top">
-        <div class="mail">
-            <a href=""><i class="fa-solid fa-square-envelope"></i></a>
-            <p>Alhikma@gmail.com</p>
+        <div class="top-nav">
+            <div class="mail">
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+                <p>info@alhikmahislamicmontessori.com</p>
             
-        </div>
-        <div class="phone">
+            </div>
+            <div class="phone">
             
-            <a href=""><i class="fa-solid fa-square-envelope"></i></a>
-            <p>+233561751341</p>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <p>+233 0320233000/+233 530220204</p>
+            </div>
         </div>
-    </div>
-    <div class="navbar">
-        <div class="logo">
-            <img src="" alt="">
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Programs</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </ul>
-    </div>
 
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="" alt=""></div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
     </div>
     
+ <!-- for placing navbar oon top of the slider in responsive mode  -->
+    <div class="menu-top">
+        <!-- Responsive Header -->
+        <section>
+            <header>
+                <div class="logo">
+                    <a href="#">
+                        <img src="image/Logo-300x254.jpg" alt="">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="menu">
+                    <a href="#" class="menu-trigger">Menu</a>
+                </div>
+            </header>
+        </section>
+        
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/IMG_4620.jpg" alt="">
+                    <div class="text">
+                        <h1>Al-Hikmah Islamic Montessori School</h1>
+                        <span>Nurturing Minds, Soul & Body</span>
+                    </div>
+        
+                </div>
+        
+                <div class="swiper-slide">
+                    <img src="image/IMG_7636.jpg" alt="">
+                    <div class="text">
+                        <h1>Al-Hikmah Islamic Montessori School</h1>
+                        <span>Nurturing Minds, Soul & Body</span>
+                    </div>
+        
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/IMG_7673.jpg" alt="">
+                    <div class="text">
+                        <h1>Al-Hikmah Islamic Montessori School</h1>
+                        <span>Nurturing Minds, Soul & Body</span>
+                    </div>
+        
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/IMG_4666.jpg" alt="">
+                    <div class="text">
+                        <h1>Al-Hikmah Islamic Montessori School</h1>
+                        <span>Nurturing Minds, Soul & Body</span>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Responsive header js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script src="java.js"></script>
 
 </body>
+
 </html>
