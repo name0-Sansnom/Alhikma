@@ -239,3 +239,62 @@ ul li a:hover {
 
 
 }
+
+/* Footer section starting  */
+
+.footer{
+    background-color: #8123AD;
+    color: #fff;
+}
+.upper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 26px;
+} 
+
+.footer .upper img {
+    height: 135px;
+    width: 220px;
+}
+.upper .contact-second .icons {
+    margin-top: 20px;
+}
+.upper .contact-second .icons .icon-side{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #fff;
+    font-family: serif;
+    /* margin-top: 5px; */
+}
+
+.upper .contact-second .icons .icon-side i {
+    font-size: 18px;
+    color: #fff;
+    height: 35px;
+    min-width: 25px;
+}
+
+/* footer right conotainer style */
+.upper .social-second .icons-second{
+    margin-top: 30px;
+}
+
+.upper .social-second .icons-second i{
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+hr {
+    background-color: #BDBDBD;
+   margin-left: 100px;
+    width: 90%;
+    /* height: 10px; */
+}
+
+.doc {
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+}
