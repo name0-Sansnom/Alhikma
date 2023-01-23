@@ -76,6 +76,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    background: linear-gradient(rgb(0, 0, 0, 0.83)rgb(0, 0, 0, 0.83));
 }
 
 .swiper-slide img {
@@ -83,6 +84,7 @@
     width: 100%;
     height: 40rem;
     object-fit: cover;
+    background: linear-gradient(rgb(0, 0, 0, 0.83)rgb(0, 0, 0, 0.83));
 }
 
 
@@ -91,6 +93,7 @@
     top: 46%;
     left: 30%;
     /* z-index: 9; */
+    background: linear-gradient(rgb(0, 0, 0, 0.83)rgb(0, 0, 0, 0.83));
     color: #fff;
 }
 
@@ -238,6 +241,180 @@ ul li a:hover {
         }
 
 
+}
+
+/* Recent posts slicker slider modifications style */
+.wrapper {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 70px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #c4c4c4;
+    padding-bottom: 20px;
+}
+
+.wrapper h2 {
+    font-family: sans-serif;
+    color: #2260cc;
+}
+
+.wrapper h2 span {
+    font-family: sans-serif;
+    color: red;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev,
+.slick-next {
+    background: #000;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+.carousel .slick-next:before,
+.carousel .slick-prev:before {
+    font-family: slick;
+    font-size: 25px;
+    line-height: 1;
+    opacity: .75;
+    color: #2260cc;
+    -webkit-font-smoothing: antialiased;
+}
+
+.carousel .slick-prev {
+    left: -40px;
+}
+
+.carousel .slick-next {
+    right: -35px;
+}
+
+.carousel .slick-dots li button::before {
+    font-family: slick;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.50;
+    color: #2260cc;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* below slider section starting */
+.nameless {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #8123ad;
+    height: 300px;
+}
+
+.nameless .boxes {
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: space-between; */
+    margin-top: 70px;
+}
+
+.boxes img {
+    height: 110px;
+    width: 132px;
+    /* padding-top: 10px; */
+    border-radius: 8px;
+}
+
+.nameless .boxes h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* A word from our founder style in action lol  */
+.founder {
+    padding-top: 50px;
+    width: 80%;
+    margin-left: 150px;
+}
+.founder h2{
+    color: #7E30A3;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.founder .speech{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.founder .speech img{
+    height: 365px;
+    width: 400px;
+    border-radius: 15px;
+}
+.founder .speech p{
+    margin-top: 50px;
+    width: 696px;
+    height: 407px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* our programs styling starting */
+.grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.activities .title{
+    color: #7E30A3;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+}
+.grid .program{
+    display: flex;
+    flex-flow: column wrap;
+    /* border-radius: 10px 10px; */
+    border-bottom: #4444;
+}
+
+.grid .program img{
+    height: 220px;
+    width: 288px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+.grid .program .program-content{
+    text-align: center;
+    font-size: 18px ;
+}
+.grid .program button{
+    background-color: #8123ad;
+    color: #fff;
+    font-size: 20px;
 }
 
 /* Footer section starting  */
