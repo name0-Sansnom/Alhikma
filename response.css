@@ -1,0 +1,148 @@
+/* Responsiveness style sheet with properties */
+@media screen and (max-width:816px) {
+
+    .menu-trigger {
+        display: block;
+    }
+
+    .menu-top {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        height: 65%;
+
+
+    }
+
+    nav ul {
+        display: block;
+
+
+    }
+
+    ul li {
+        width: 50vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: center;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .menu-top {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    .logo img {
+        margin-left: 0.1em;
+
+    }
+
+    ul li {
+        width: 25vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: left;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    .swiper-slide img {
+        height: auto;
+    }
+
+    .swiper-slide .text {
+        font-size: 10px;
+        left: 5%;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .nameless {
+        height: auto;
+    }
+
+    .nameless .boxes {
+        margin-bottom: 40px;
+    }
+    .nameless .boxes h3 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .nameless .boxes img {
+        height: 60px;
+        width: 70px;
+    }
+
+    .founder {
+        margin-left: 40px;
+    }
+
+    .program {
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        margin-left: 20px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .footer h2 {
+        font-size: 20px;
+    }
+    .footer h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .contact-second{
+        margin-top: 50px;
+    }
+    .footer .contact-second h2 {
+        text-align: center;
+    }
+    .social-second {
+             margin-top: 30px;
+    }
+    hr {
+        margin-left: 50px;
+        margin-top: 15px;
+        width: 70%;
+    }
+
+
+}

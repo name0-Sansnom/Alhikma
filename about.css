@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* Main body starts here */
+ h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(126, 48, 163);
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+    
+.aboutBanner{
+    height: 30rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/278362073_376743961129998_3466514035956970775_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.about .about_h3{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+} 
+
+.belowText{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.belowText #belowLine{
+    background-color: #7e30a3;
+    height: 0.2rem;
+    width: 7.5rem;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+
+.section2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+
+.mission{
+    display: flex;
+    margin-top: 5%;
+}
+
+
+/* .section2 .mission .history .missionText .missionText .text-2{
+    margin-top: 20px;
+} */
+
+.missionText{
+    margin-top: 20px;
+}
+
+.missionText .text-2{
+    margin-top: 20px;
+}
+
+.missionImage{
+    width: 50%;
+    height: 400px;
+    background-image: url('image/IMG_0535.jpg');
+     background-position: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border: 2px solid rgb(126, 48, 163);
+     border-radius: 10px;
+}
+
+.mission .history{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.section3{
+    margin-top: 5%;
+}
+
+.section3  p{
+    text-align: center;
+   
+}
+
+.coreValues{
+    width: 100%;
+    height: 800px;
+    background-image: url('image/CORE-VALUES-V11-2048x1366.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.values{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+     margin-top: 5%; 
+}
+
+#icon{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+iconify-icon{
+    font-size:60px;
+    color:rgb(126, 48, 163);
+    text-shadow:2px 2px 4px #000000;
+}
+
+.section5 p{
+    text-align: center;
+}
+
+.subject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#subjectCard{
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 5%; 
+}
+
+.ourTeam{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#team{
+    width: 20%;
+    height: 400px;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+#team img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* #team h3{
+    color: rgb(126, 48, 163);
+    text-align: center;
+} */
+
+#team p{
+    text-align: center;
+}
+
+.section6{
+    margin-bottom: 30px;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:816px) {
+
+    .menu-trigger {
+        display: block;
+    }
+    .menu-top{
+        position: relative;
+    }
+    section{
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        height: 65%;
+
+
+    }
+
+    nav ul {
+        display: block;
+
+
+    }
+
+    ul li {
+        width: 50vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: center;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+    .belowText #belowLine{
+        background-color: #7e30a3;
+        height: 0.2rem;
+        width: 6.5rem;
+        margin-left: 43%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section2 .mission{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+        
+        .section2 .mission .missionImage {
+            width: 100%;
+            height: 400px;
+        }
+        .section2 .mission .history{
+            width: 100%;
+        }
+    
+
+         .section3 .coreValues{
+            width: 80%;
+            height: 400px;
+            margin-left: 50px;
+        }
+
+        #team {
+           
+            width: 200px;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        #team img {
+            width: 200px;
+            height: 250px;
+        }
+
+        #team h3{
+            font-size: 15px;
+        }
+
+        #team p{
+            font-size: 12px;
+        }
+
+    }
+
+@media (max-width: 375px) {
+   
+     h1{
+        font-size: 24px;
+        /* margin-bottom: 10px; */
+    }
+     
+     h3{
+        font-size: 10px;
+     } 
+     
+     p{
+        font-size: 7px;
+    }
+
+    .menu-top {
+            position: relative;
+        }
+    
+        section {
+            position: absolute;
+            top: 5px;
+            z-index: 99;
+        }
+
+    .logo img {
+        margin-left: 0.1em;
+
+    }
+
+        ul li {
+            width: 25vh;
+    
+        }
+    
+        ul li a {
+            display: block;
+            text-align: left;
+            color: #7E30A3;
+            background: #ddd;
+    
+        }
+
+       
+        .belowText #belowLine{
+            background-color: #7e30a3;
+            height: 0.2rem;
+            width: 4.5rem;
+            margin-left: 40%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .statistics .num{
+            font-size: 22px;
+        }
+       
+
+        .section2 .mission{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+        
+        .section2 .mission .missionImage {
+            width: 100%;
+            height: 200px;
+        }
+        .section2 .mission .history{
+            width: 100%;
+        }
+    
+
+        .section3 .coreValues{
+            width: 80%;
+            height: 200px;
+            margin-left: 20px;
+        }
+
+        .section4 .values{
+            margin-left: 68px;
+        }
+        .section4 #icon{
+            margin-top: 20px;
+        }
+        .top {
+            display: none;
+        }
+
+        #subjectCard{
+           height: 100px;
+           width: 100px;
+           
+        }
+       
+        #subjectCard img{
+            height: 70px;
+            width: 70px;
+        }
+
+        #subjectCard p{
+            text-align: center;
+            font-size: 10px;
+        }
+
+
+        #team {
+           
+            width: 100px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        #team img {
+            width: 100px;
+            height: 120px;
+        }
+
+        #team h3{
+            font-size: 10px;
+        }
+
+        #team p{
+            font-size: 7px;
+        }
+
+        
+}
+
