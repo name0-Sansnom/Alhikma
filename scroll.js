@@ -1,10 +1,10 @@
-// ScrollReveal().reveal('.team1', { delay: 300,})
-// ScrollReveal().reveal('.team2', { delay: 400 })
-// ScrollReveal().reveal('.team3', { delay: 500 })
-// ScrollReveal().reveal('.team4', { delay: 600 })
-// ScrollReveal().reveal('.team5', { delay: 700 })
-// ScrollReveal().reveal('.team6', { delay: 800 })
-// ScrollReveal().reveal('.team7', { delay: 900 })
+ScrollReveal().reveal('.team1', { delay: 300,})
+ScrollReveal().reveal('.team2', { delay: 400 })
+ScrollReveal().reveal('.team3', { delay: 500 })
+ScrollReveal().reveal('.team4', { delay: 600 })
+ScrollReveal().reveal('.team5', { delay: 700 })
+ScrollReveal().reveal('.team6', { delay: 800 })
+ScrollReveal().reveal('.team7', { delay: 900 })
 
 
 
