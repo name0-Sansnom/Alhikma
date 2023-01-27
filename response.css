@@ -1,0 +1,176 @@
+/* Responsiveness style sheet with properties */
+
+@media screen and (max-width:816px) {
+
+    .menu-trigger {
+        display: block;
+    }
+
+    .menu-top {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        height: 65%;
+
+
+    }
+
+    nav ul {
+        display: block;
+
+
+    }
+
+    ul li {
+        width: 50vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: center;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .menu-top {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    .logo img {
+        margin-left: 0.1em;
+
+    }
+
+    ul li {
+        width: 25vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: left;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    /* heroimage styling */
+
+    .slider-box {
+        height: 10rem;
+    }
+
+    .slider-text h1 {
+        font-size: 5px; 
+        padding-top: 40px; 
+        /* padding-right: 30px; */
+       
+    }
+
+   .text {
+    font-size: small;
+    /* padding-top: 5px; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+   }
+
+   .parent {
+    margin-top: 125px;
+   }
+
+   .text h3 {
+    padding-top: 1px;
+   }
+
+   .line {
+    display: none;
+   }
+
+/* .activities {
+    margin-top: 2px;
+   }   */
+
+   .grid {
+    margin-top: 2px;
+  
+   } 
+
+   img {
+    height: 200px;
+    width: 200px;
+   }
+
+   .programs .program-content{
+    height: 150px;
+   
+    
+   }
+
+    .swiper-slide img {
+        height: auto;
+    }
+
+    .swiper-slide .text {
+        font-size: 10px;
+        left: 5%;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .nameless {
+        height: auto;
+    }
+
+    .nameless .boxes {
+        margin-bottom: 40px;
+        font-size: 6px;
+    }
+
+    .nameless .boxes img {
+        height: 60px;
+        width: 70px;
+    }
+
+    .founder {
+        margin-left: 40px;
+    }
+
+    .program {
+        margin-top: 40px;
+        
+    }
+
+    .wrapper {
+        margin-left: 20px;
+    }
+
+
+}
