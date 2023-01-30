@@ -129,13 +129,14 @@ p{
 }
 
 .coreValues{
-    width: 70%;
-    height: 500px;
+    width: 60%;
+    height: 490px;
     background-image: url('images/CORE-VALUES-V11-2048x1366.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
     margin-left: 15%;
+    margin-top: 20px;
     /* animation: myAnim 2s ease-out 0s 2 normal forwards; */
 }
 
