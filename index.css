@@ -1,14 +1,15 @@
-html,body {
-    margin:0;
+html,
+body {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background-color:#7E30A3; */
-    
-
-} 
 
 
-*{
+}
+
+
+* {
     margin: 0;
 
     padding: 0;
@@ -16,156 +17,29 @@ html,body {
 }
 
 
-.top{
-    background-color: #7E30A3;
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
-    
-}
-
-.top-nav{
-    display: flex;
-    justify-content:space-between;
-    
-}
-
-.top .top-nav .mail, .phone {
-    display: flex;
-    font-size: 14px;
-    color: #fff;
-    font-family:'Montserrat', sans-serif;
-    margin: 5px 0 0 20px;
-   
-}
-
-.top .mail i,
-.phone i{
-    font-size: 16px;
-    color: #fff;
-    height: 50px;
-    min-width: 20px;
-}
-
-.top .social{
-    margin-right: 80px;
-}
-.top .social  i{
-    font-size: 18px;
-    color: #fff;
-    height: 50px;
-    min-width: 20px;
-    margin-right: 15px;
-    margin-top: 5px;
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 10rem;
-}
-
-.nav img {
-    height: 80px;
-    width: 100px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* height: 18%; */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-    background-color: #fff;
-}
-
-.logo img {
-    margin-left: 2.3em;
-    height: 45px;
-    width: 65px;
-    /* max-width: 100%;
-   height: auto !important; */
-}
-
-nav ul {
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    list-style-type: none;
-}
-
-ul li a {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #7E30A3;
-    font-weight: bold;
-    transition: .5s;
-    font-family: 'Poppins', sans-serif;
-}
-
-ul li a:hover {
-    background: #7E30A3;
-    color: #fff;
-    transition: .5s
-}
-
-
 body {
-background-color: #7E30A3;
+    background-color: #7E30A3;
 }
-
-.menu-trigger {
-    display: none;
-    margin-top: 10px;
-    margin-right: 1.5em;
-    background: #7E30A3;
-    color: #fff;
-    padding: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* @media only screen and (max-width: 1200px) {  */
-    
-    
-
-
- .contact {
+.contact {
     height: 30rem;
-    background: linear-gradient(10deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/IMG_4643.jpg");
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/IMG_4643.jpg");
     background-size: cover;
     background-position: center;
-   
-
-
- 
-} 
-
-
- 
-.contact > h1 {
+}
+.contact>h1 {
     color: #fff;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 16rem;
     left: 40%;
-
-
 }
-
-
-    
 .Boxes {
- display: flex;
- justify-content: center;
- margin-top: -100px;
- margin-left:120px;
-  
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-left: 120px;
+
 }
 
 .Boxes .card {
@@ -176,25 +50,28 @@ background-color: #7E30A3;
     border-radius: 5%;
     text-align: center;
     padding: 40px 15px 20px 15px;
-    margin-right:120px;
+    margin-right: 120px;
 
-    
+
 }
 
 
-
+/* 
 .icon-svg {
-height: 60px;
-width: 60px;
+    height: 60px;
+    width: 60px;
 
-}
+} */
 
 
-.cards-style > p {
+.cards-style>p {
     font-size: 20px;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 30px;
 
+}
+.cards-style,.fa-solid{
+    font-size: 4rem;
 }
 
 
@@ -206,33 +83,33 @@ width: 60px;
 }
 
 .formular {
-    color:#fff;
-    font-family:'Montserrat', sans-serif;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     height: 400px;
-    
-  
+
+
 
 }
 
 
-form > label {
+form>label {
     font-size: 25px;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
-form >input {
-      background-color: #7E30A3;
-      border:none;
-      color:#fff;
-      width: 30rem;
-      height: 2rem;
-      font-family:'Montserrat', sans-serif;
-      font-size: 18px;
-      outline:#7E30A3; 
+form>input {
+    background-color: #7E30A3;
+    border: none;
+    color: #fff;
+    width: 30rem;
+    height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    outline: #7E30A3;
 
-      
+
 
 }
 
@@ -241,7 +118,7 @@ form >input {
 .button {
     background-color: #fff;
     width: 7rem;
-    color:#7E30A3;
+    color: #7E30A3;
     border-radius: 10%;
     box-sizing: border-box;
 }
@@ -249,36 +126,36 @@ form >input {
 .Touch {
     height: 400px;
     width: 360px;
-color:#fff;
-font-family:'Montserrat', sans-serif;
-padding-top:37px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 37px;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.Touch > h1 {
-font-size: 40px;
-padding-bottom:10px;
+.Touch>h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 
-.Touch >p {
+.Touch>p {
     font-size: 20px;
-    text-align:justify;
+    text-align: justify;
     line-height: 1.8rem;
 }
 
 
 
 .icon-accent {
-    margin-top:55px;
-    margin-right:40px;
+    margin-top: 55px;
+    margin-right: 40px;
     width: 30px;
-    height: 30px; 
-    fill:#fff;
+    height: 30px;
+    fill: #fff;
     display: inline-block;
 }
 
-@media screen and (max-width: 375px)  {
+  @media screen and (max-width: 375px) {
 
     body {
         overflow-x: hidden;
@@ -286,381 +163,234 @@ padding-bottom:10px;
 
     .contact {
         height: 15rem;
-       
+
     }
 
-    
-    .contact > h1 , .Touch > h1{
+
+    .contact>h1,
+    .Touch>h1 {
         font-size: 20px;
-        left:35%;
+        left: 35%;
     }
 
-    .contact > h1 {
-        position:absolute;
+    .contact>h1 {
+        position: absolute;
         top: 7rem;
     }
+
     .Boxes {
         margin-top: -40px;
-        margin-left:30px; 
-       }
-       
-       .Boxes .card {
-           height: 50px;
-           width: 70px;
-           padding: 20px 5px 10px 5px;
-           margin-right:30px;
-       }
-
-       .icon-svg {
-        height: 20px;
-        width: 20px;
-        
-        }
-        
-        
-        .cards-style > p {
-            font-size: 7px;
-            font-family:'Montserrat', sans-serif;
-            padding-top: 7px;
-        
-        }
-          
-       
-
-.reach-us {
-    display:inline-block;
-    margin-top: 4rem;
-}
-
-.formular {
-    box-sizing: border-box;
-    height: 200px;
-    margin-left:20px;
-    
-  
-
-}
-
-
-form > label {
-    font-size: 15px;
-
-}
-
-form >input {
-      width: 15rem;
-      height: 1rem;    
-      font-size: 15px;
-
-}
-
-form > hr {
-    width:16rem;
-}
-
-
-
-.button {
-    width: 5rem;
-    font-size: 15px;
-    box-sizing: border-box;
-}
-
-.Touch {
-height: 200px;
-width: 200px;
-padding-top:80px;
-margin-left:20px;
-}
-
-
-.Touch >p {
-    font-size: 15px;
-    text-align:justify;
-    line-height: 1rem;
-}
-
-
-
-.icon-accent {
-    margin-top:40px;
-    margin-right:20px;
-    width: 15px;
-    height: 15px; 
-}
-
-.map > iframe {
-   height: 200px;
-   margin-top:20px;
-}
-
-}
-
-
-@media screen and ( min-width:376px) and (max-width: 816px) {
-
-    body {
-     overflow-x: hidden;
+        margin-left: 30px;
     }
 
+    .Boxes > .card {
+        height: 50px;
+        width: 70px;
+        padding: 20px 5px 10px 5px;
+        margin-right: 30px;
+        
+    }
+
+    .cards-style > i {
+        /* height: 10px;
+        width: 10px; */
+        font-size: 20px;
+        transform: translateY(-45px);
+    }
+
+   
+
+
+    .cards-style>p {
+        font-size: 7px;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 7px;
+        transform: translateY(-50px);
+    }
+
+
+
+    .reach-us {
+        display: inline-block;
+        margin-top: 4rem;
+    }
+
+    .formular {
+        box-sizing: border-box;
+        height: 200px;
+        margin-left: 20px;
+
+
+
+    }
+
+
+    form>label {
+        font-size: 15px;
+
+    }
+
+    form>input {
+        width: 15rem;
+        height: 1rem;
+        font-size: 15px;
+
+    }
+
+    form>hr {
+        width: 16rem;
+    }
+
+
+
+    .button {
+        width: 5rem;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .Touch {
+        height: 200px;
+        width: 200px;
+        padding-top: 80px;
+        margin-left: 20px;
+    }
+
+
+    .Touch>p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1rem;
+    }
+
+
+
+    .icon-accent {
+        margin-top: 40px;
+        margin-right: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .map>iframe {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+} 
+
+
+ @media screen and (min-width:376px) and (max-width: 816px) {
+
+    body {
+        overflow-x: hidden;
+       }
 
     .contact {
         height: 20rem;
-        margin:0%;
-       
+
     }
-    
-    .contact > h1 , .Touch > h1{
+
+    .contact>h1,
+    .Touch>h1 {
         font-size: 30px;
-    
+
     }
 
-    .contact > h1 {
-        position:absolute;
-        top: 9rem;
-        left:37%;
-    }
-    .Boxes {
-        margin-top: -65px;
-        margin-left:60px;
-       }
-       
-       .Boxes .card {
-           height: 100px;
-           width: 130px;
-           padding: 30px 10px 15px 10px;
-           margin-right:60px;
-       }
-
-       .icon-svg {
-        height: 35px;
-        width: 35px;
-        
-        }
-        
-        
-        .cards-style > p {
-            font-size: 12px;
-            font-family:'Montserrat', sans-serif;
-            padding-top: 30px;
-        
-        }
-          
-       
-
-.reach-us {
-    display:flex;
-    margin-top: 5rem;
-}
-
-.formular {
-    box-sizing: border-box;
-    height: 250px;
-
-}
-
-
-form > label {
-    font-size: 20px;
-
-}
-
-form >input {
-      width: 20rem;
-      height: 1.5rem;    
-      font-size: 20px;
-
-}
-
-
-.button {
-    width: 6.5rem;
-    font-size: 17px;
-    box-sizing: border-box;
-}
-
-.Touch {
-height: 250px;
-width: 300px;
-padding-top:27px;
-margin-left:20px;
-}
-
-
-.Touch >p {
-    font-size: 20px;
-    text-align:justify;
-    line-height: 1.5rem;
-}
-
-
-
-.icon-accent {
-    margin-top:60px;
-    margin-right:30px;
-    width: 20px;
-    height: 20px; 
-}
-
-.map > iframe {
-   height: 350px;
-   margin-top:80px;
-}
-
-
-
-    
-}
-
-
-/* } */
-
-
-
-
-
-/* Footer section starting  */
-
-.footer{
-    background-color: #8123AD;
-    color: #fff;
-}
-.upper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 26px;
-} 
-
-.footer .upper img {
-    height: 135px;
-    width: 220px;
-}
-.upper .contact-second .icons {
-    margin-top: 20px;
-}
-.upper .contact-second .icons .icon-side{
-    display:flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-    color: #fff;
-    font-family: serif;
-    /* margin-top: 5px; */
-}
-
-.upper .contact-second .icons .icon-side i {
-    font-size: 18px;
-    color: #fff;
-    height: 35px;
-    min-width: 25px;
-}
-
-/* footer right conotainer style */
-.upper .social-second .icons-second{
-    margin-top: 30px;
-}
-
-.upper .social-second .icons-second i{
-    font-size: 22px;
-    margin-left: 20px;
-}
-
-.bottomline > hr {
-    background-color: #BDBDBD;
-   margin-left: 100px;
-    width: 90%;
-    /* height: 10px; */
-}
-
-.doc {
-    margin-top: 15px;
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-
-
-@media screen and (max-width:816px) {
-
-    .menu-trigger {
-        display: block;
-    }
-    .menu-top{
-        position: relative;
-    }
-    section{
+    .contact>h1 {
         position: absolute;
-        top: 5px;
-        z-index: 99;
+        top: 9rem;
+        left: 37%;
     }
 
-    header {
-        display: flex;
-        align-items: flex-start;
-        height: 65%;
-
-
+    .Boxes {
+        margin-top: -70px;
+        margin-left: 60px;
     }
 
-    nav ul {
-        display: block;
-
-
+    .Boxes .card {
+        height: 100px;
+        width: 130px;
+        padding: 30px 10px 15px 10px;
+        margin-right: 60px;
     }
 
-    ul li {
-        width: 50vh;
-
+    .cards-style > i {
+        /* height: 10px;
+        width: 10px; */
+        font-size: 40px;
+        transform: translateY(-30px);
     }
 
-    ul li a {
-        display: block;
-        text-align: center;
-        color: #7E30A3;
-        background: #ddd;
-      
-
-    }
-
-    .top {
-        display: none;
-    }
-
-}
-
-@media (max-width: 375px) {
    
-    .menu-top {
-            position: relative;
-        }
-    
-        section {
-            position: absolute;
-            top: 5px;
-            z-index: 99;
-        }
 
-    .logo img {
-        margin-left: 0.1em;
+
+    .cards-style>p {
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        transform: translateY(-60px);
+    }
+
+
+
+
+    .reach-us {
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .formular {
+        box-sizing: border-box;
+        height: 250px;
 
     }
 
-        ul li {
-            width: 25vh;
-    
-        }
-    
-        ul li a {
-            display: block;
-            text-align: left;
-            color: #7E30A3;
-            background: #ddd;
-    
-        }
 
-        .top {
-            display: none;
-        }
+    form>label {
+        font-size: 20px;
+
+    }
+
+    form>input {
+        width: 20rem;
+        height: 1.5rem;
+        font-size: 20px;
+
+    }
 
 
+    .button {
+        width: 6.5rem;
+        font-size: 17px;
+        box-sizing: border-box;
+    }
+
+    .Touch {
+        height: 250px;
+        width: 300px;
+        padding-top: 27px;
+        margin-left: 20px;
+    }
+
+
+    .Touch>p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+
+
+    .icon-accent {
+        margin-top: 60px;
+        margin-right: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .map>iframe {
+        height: 350px;
+        margin-top: 80px;
+    }
 }
