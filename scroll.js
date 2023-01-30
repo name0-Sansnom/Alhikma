@@ -24,3 +24,34 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
+// icons
+ScrollReveal().reveal('.icon1', { delay: 300, 
+// rotate:{
+//   x:20,
+//   y:60,
+//   z:40
+// }
+
+// scale: 2,
+//easing: 'ease-in',
+origin: 'top'
+})
+ScrollReveal().reveal('.icon2', { delay: 400 })
+ScrollReveal().reveal('.icon3', { delay: 500 })
+ScrollReveal().reveal('.icon4', { delay: 600 })
+ScrollReveal().reveal('.icon5', { delay: 700 })
+ScrollReveal().reveal('.icon6', { delay: 800 })
+
+
+// corevalues
+ScrollReveal().reveal('.coreValues', { delay: 300, 
+  // rotate:{
+  //   x:20,
+  //   y:60,
+  //   z:40
+  // }
+  
+  scale: 2,
+
+})
