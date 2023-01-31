@@ -1,3 +1,18 @@
+// responsive Header
+
+$(document).ready(function () {
+  $(".menu-trigger").click(function () {
+    $("ul li").slideToggle(500);
+  }); //end slide toggle
+
+  $(window).resize(function () {
+    if ($(window).width() > 500) {
+      $("ul li").removeAttr("style");
+    }
+  }); //end resize
+}); //end ready
+
+
 // Autoplay Slider
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
@@ -16,19 +31,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// responsive Header
-
-$(document).ready(function () {
-  $(".menu-trigger").click(function () {
-    $("ul li").slideToggle(500);
-  }); //end slide toggle
-
-  $(window).resize(function () {
-    if ($(window).width() > 500) {
-      $("ul li").removeAttr("style");
-    }
-  }); //end resize
-}); //end ready
 
 // slick testimonials caroussel
 $(document).ready(function () {
@@ -73,28 +75,4 @@ $(document).ready(function () {
   });
 });
 
-// about us js script start
-ScrollReveal().reveal(".team1", { delay: 300 });
-ScrollReveal().reveal(".team2", { delay: 400 });
-ScrollReveal().reveal(".team3", { delay: 500 });
-ScrollReveal().reveal(".team4", { delay: 600 });
-ScrollReveal().reveal(".team5", { delay: 700 });
-ScrollReveal().reveal(".team6", { delay: 800 });
-ScrollReveal().reveal(".team7", { delay: 900 });
 
-//Counter
-let valueDisplays = document.querySelectorAll(".number");
-let interval = 4000;
-
-valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
-});

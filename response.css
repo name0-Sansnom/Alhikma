@@ -1,5 +1,8 @@
 /* Responsiveness style sheet with properties */
 @media screen and (max-width:816px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .menu-trigger {
         display: block;
@@ -47,60 +50,174 @@
     }
 
     /* about_us tablet mode responsiveness styling starting */
-                .belowText #belowLine {
-                    background-color: #7e30a3;
-                    height: 0.2rem;
-                    width: 6.5rem;
-                    margin-left: 43%;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                }
-        
-                .section2 .mission {
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                }
-        
-                .section2 .mission .missionImage {
-                    width: 100%;
-                    height: 400px;
-                }
-        
-                .section2 .mission .history {
-                    width: 100%;
-                }
-        
-        
-                .section3 .coreValues {
-                    width: 80%;
-                    height: 400px;
-                    margin-left: 50px;
-                }
-        
-                #team {
-        
-                    width: 200px;
-                    height: 300px;
-                    margin-top: 20px;
-                }
-        
-                #team img {
-                    width: 200px;
-                    height: 250px;
-                }
-        
-                #team h3 {
-                    font-size: 15px;
-                }
-        
-                #team p {
-                    font-size: 12px;
-                }
+    .belowText #belowLine {
+        background-color: #7e30a3;
+        height: 0.2rem;
+        width: 6.5rem;
+        margin-left: 43%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
+    .section2 .mission {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
+    .section2 .mission .missionImage {
+        width: 100%;
+        height: 400px;
+    }
+
+    .section2 .mission .history {
+        width: 100%;
+    }
+
+
+    .section3 .coreValues {
+        width: 80%;
+        height: 400px;
+        margin-left: 50px;
+    }
+
+    #team {
+
+        width: 200px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    #team img {
+        width: 200px;
+        height: 250px;
+    }
+
+    #team h3 {
+        font-size: 15px;
+    }
+
+    #team p {
+        font-size: 12px;
+    }
+
+    /* Contact us tablet mode responsivenesss style */
+    .contact {
+        height: 20rem;
+
+    }
+
+    .contact>h1,
+    .Touch>h1 {
+        font-size: 30px;
+
+    }
+
+    .contact>h1 {
+        position: absolute;
+        top: 9rem;
+        left: 37%;
+    }
+
+    .Boxes {
+        margin-top: -70px;
+        margin-left: 60px;
+    }
+
+    .Boxes .card {
+        height: 100px;
+        width: 130px;
+        padding: 30px 10px 15px 10px;
+        margin-right: 60px;
+    }
+
+    .cards-style>i {
+        /* height: 10px;
+        width: 10px; */
+        font-size: 40px;
+        transform: translateY(-30px);
+    }
+
+
+
+
+    .cards-style>p {
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        transform: translateY(-60px);
+    }
+
+
+
+
+    .reach-us {
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .formular {
+        box-sizing: border-box;
+        height: 250px;
+
+    }
+
+
+    form>label {
+        font-size: 20px;
+
+    }
+
+    form>input {
+        width: 20rem;
+        height: 1.5rem;
+        font-size: 20px;
+
+    }
+
+
+    .button {
+        width: 6.5rem;
+        font-size: 17px;
+        box-sizing: border-box;
+    }
+
+    .Touch {
+        height: 250px;
+        width: 300px;
+        padding-top: 27px;
+        margin-left: 20px;
+    }
+
+
+    .Touch>p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+
+
+    .icon-accent {
+        margin-top: 60px;
+        margin-right: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .map>iframe {
+        height: 350px;
+        margin-top: 80px;
+    }
 }
 
+
+/* General style for phone mode responiveness */
+
 @media (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .menu-top {
         position: relative;
@@ -150,6 +267,7 @@
     .nameless .boxes {
         margin-bottom: 40px;
     }
+
     .nameless .boxes h3 {
         font-size: 14px;
         padding-left: 10px;
@@ -171,116 +289,239 @@
     .wrapper {
         margin-left: 20px;
     }
+
     .footer p {
         font-size: 14px;
     }
+
     .footer h2 {
         font-size: 20px;
     }
+
     .footer h4 {
         font-size: 12px;
         text-align: center;
     }
-    .contact-second{
+
+    .contact-second {
         margin-top: 50px;
     }
+
     .footer .contact-second h2 {
         text-align: center;
     }
+
     .social-second {
-             margin-top: 30px;
+        margin-top: 30px;
     }
+
     hr {
         margin-left: 50px;
         margin-top: 15px;
         width: 70%;
     }
-        /* about_us phone mode responsiveness styling starting */
-        .belowText #belowLine {
-            background-color: #7e30a3;
-            height: 0.2rem;
-            width: 4.5rem;
-            margin-left: 40%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    
-        .statistics .num {
-            font-size: 22px;
-        }
-    
-    
-        .section2 .mission {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-between;
-        }
-    
-        .section2 .mission .missionImage {
-            width: 100%;
-            height: 200px;
-        }
-    
-        .section2 .mission .history {
-            width: 100%;
-        }
-    
-    
-        .section3 .coreValues {
-            width: 80%;
-            height: 200px;
-            margin-left: 20px;
-        }
-    
-        .section4 .values {
-            margin-left: 68px;
-        }
-    
-        .section4 #icon {
-            margin-top: 20px;
-        }
-    
-        .top {
-            display: none;
-        }
-    
-        #subjectCard {
-            height: 100px;
-            width: 100px;
-    
-        }
-    
-        #subjectCard img {
-            height: 70px;
-            width: 70px;
-        }
-    
-        #subjectCard p {
-            text-align: center;
-            font-size: 10px;
-        }
-    
-    
-        #team {
-    
-            width: 100px;
-            height: 150px;
-            margin-top: 20px;
-        }
-    
-        #team img {
-            width: 100px;
-            height: 120px;
-        }
-    
-        #team h3 {
-            font-size: 10px;
-        }
-    
-        #team p {
-            font-size: 7px;
-        }
 
+    /* about_us phone mode responsiveness styling starting */
+    .belowText #belowLine {
+        background-color: #7e30a3;
+        height: 0.2rem;
+        width: 4.5rem;
+        margin-left: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .statistics .num {
+        font-size: 22px;
+    }
+
+
+    .section2 .mission {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
+    .section2 .mission .missionImage {
+        width: 100%;
+        height: 200px;
+    }
+
+    .section2 .mission .history {
+        width: 100%;
+    }
+
+
+    .section3 .coreValues {
+        width: 80%;
+        height: 200px;
+        margin-left: 20px;
+    }
+
+    .section4 .values {
+        margin-left: 68px;
+    }
+
+    .section4 #icon {
+        margin-top: 20px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    #subjectCard {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    #subjectCard img {
+        height: 70px;
+        width: 70px;
+    }
+
+    #subjectCard p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+    #team {
+
+        width: 100px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #team img {
+        width: 100px;
+        height: 120px;
+    }
+
+    #team h3 {
+        font-size: 10px;
+    }
+
+    #team p {
+        font-size: 7px;
+    }
+
+
+    /* contact_us responsive */
+    .contact {
+        height: 15rem;
+
+    }
+
+
+    .contact>h1,
+    .Touch>h1 {
+        font-size: 20px;
+        left: 35%;
+    }
+
+    .contact>h1 {
+        position: absolute;
+        top: 7rem;
+    }
+
+    .Boxes {
+        margin-top: -40px;
+        margin-left: 30px;
+    }
+
+    .Boxes>.card {
+        height: 50px;
+        width: 70px;
+        padding: 20px 5px 10px 5px;
+        margin-right: 30px;
+
+    }
+
+    .cards-style>i {
+        /* height: 10px;
+        width: 10px; */
+        font-size: 20px;
+        transform: translateY(-45px);
+    }
+
+
+
+
+    .cards-style>p {
+        font-size: 7px;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 7px;
+        transform: translateY(-50px);
+    }
+
+
+
+    .reach-us {
+        display: inline-block;
+        margin-top: 4rem;
+    }
+
+    .formular {
+        box-sizing: border-box;
+        height: 200px;
+        margin-left: 20px;
+
+
+
+    }
+
+
+    form>label {
+        font-size: 15px;
+
+    }
+
+    form>input {
+        width: 15rem;
+        height: 1rem;
+        font-size: 15px;
+
+    }
+
+    form>hr {
+        width: 16rem;
+    }
+
+
+
+    .button {
+        width: 5rem;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .Touch {
+        height: 200px;
+        width: 200px;
+        padding-top: 80px;
+        margin-left: 20px;
+    }
+
+
+    .Touch>p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1rem;
+    }
+
+
+
+    .icon-accent {
+        margin-top: 40px;
+        margin-right: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .map>iframe {
+        height: 200px;
+        margin-top: 20px;
+    }
 }
-
-/* contact_us responsive */
