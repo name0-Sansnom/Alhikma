@@ -50,56 +50,56 @@
     }
 
     /* about_us tablet mode responsiveness styling starting */
-    .belowText #belowLine {
-        background-color: #7e30a3;
-        height: 0.2rem;
-        width: 6.5rem;
-        margin-left: 43%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .section2 .mission {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-    }
-
-    .section2 .mission .missionImage {
-        width: 100%;
-        height: 400px;
-    }
-
-    .section2 .mission .history {
-        width: 100%;
-    }
-
-
-    .section3 .coreValues {
-        width: 80%;
-        height: 400px;
-        margin-left: 50px;
-    }
-
-    #team {
-
-        width: 200px;
-        height: 300px;
-        margin-top: 20px;
-    }
-
-    #team img {
-        width: 200px;
-        height: 250px;
-    }
-
-    #team h3 {
-        font-size: 15px;
-    }
-
-    #team p {
-        font-size: 12px;
-    }
+        .belowText #belowLine {
+            background-color: #7e30a3;
+            height: 0.2rem;
+            width: 6.5rem;
+            margin-left: 43%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        .section2 .mission {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+    
+        .section2 .mission .missionImage {
+            width: 100%;
+            height: 400px;
+        }
+    
+        .section2 .mission .history {
+            width: 100%;
+        }
+    
+    
+        .section3 .coreValues {
+            width: 80%;
+            height: 400px;
+            margin-left: 50px;
+        }
+    
+        #team {
+    
+            width: 200px;
+            height: 300px;
+            margin-top: 20px;
+        }
+    
+        #team img {
+            width: 200px;
+            height: 250px;
+        }
+    
+        #team h3 {
+            font-size: 15px;
+        }
+    
+        #team p {
+            font-size: 12px;
+        }
 
     /* Contact us tablet mode responsivenesss style */
     .contact {
@@ -215,6 +215,8 @@
 /* General style for phone mode responiveness */
 
 @media (max-width: 375px) {
+
+    
     body {
         overflow-x: hidden;
     }
@@ -322,90 +324,90 @@
     }
 
     /* about_us phone mode responsiveness styling starting */
-    .belowText #belowLine {
-        background-color: #7e30a3;
-        height: 0.2rem;
-        width: 4.5rem;
-        margin-left: 40%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .statistics .num {
-        font-size: 22px;
-    }
-
-
-    .section2 .mission {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-    }
-
-    .section2 .mission .missionImage {
-        width: 100%;
-        height: 200px;
-    }
-
-    .section2 .mission .history {
-        width: 100%;
-    }
-
-
-    .section3 .coreValues {
-        width: 80%;
-        height: 200px;
-        margin-left: 20px;
-    }
-
-    .section4 .values {
-        margin-left: 68px;
-    }
-
-    .section4 #icon {
-        margin-top: 20px;
-    }
-
-    .top {
-        display: none;
-    }
-
-    #subjectCard {
-        height: 100px;
-        width: 100px;
-
-    }
-
-    #subjectCard img {
-        height: 70px;
-        width: 70px;
-    }
-
-    #subjectCard p {
-        text-align: center;
-        font-size: 10px;
-    }
-
-
-    #team {
-
-        width: 100px;
-        height: 150px;
-        margin-top: 20px;
-    }
-
-    #team img {
-        width: 100px;
-        height: 120px;
-    }
-
-    #team h3 {
-        font-size: 10px;
-    }
-
-    #team p {
-        font-size: 7px;
-    }
+        .belowText #belowLine {
+            background-color: #7e30a3;
+            height: 0.2rem;
+            width: 4.5rem;
+            margin-left: 40%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        .statistics .num {
+            font-size: 22px;
+        }
+    
+    
+        .section2 .mission {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+    
+        .section2 .mission .missionImage {
+            width: 100%;
+            height: 200px;
+        }
+    
+        .section2 .mission .history {
+            width: 100%;
+        }
+    
+    
+        .section3 .coreValues {
+            width: 80%;
+            height: 200px;
+            margin-left: 20px;
+        }
+    
+        .section4 .values {
+            margin-left: 68px;
+        }
+    
+        .section4 #icon {
+            margin-top: 20px;
+        }
+    
+        .top {
+            display: none;
+        }
+    
+        #subjectCard {
+            height: 100px;
+            width: 100px;
+    
+        }
+    
+        #subjectCard img {
+            height: 70px;
+            width: 70px;
+        }
+    
+        #subjectCard p {
+            text-align: center;
+            font-size: 10px;
+        }
+    
+    
+        #team {
+    
+            width: 100px;
+            height: 150px;
+            margin-top: 20px;
+        }
+    
+        #team img {
+            width: 100px;
+            height: 120px;
+        }
+    
+        #team h3 {
+            font-size: 10px;
+        }
+    
+        #team p {
+            font-size: 7px;
+        }
 
 
     /* contact_us responsive */
