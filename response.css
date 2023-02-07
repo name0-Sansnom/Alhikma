@@ -347,7 +347,7 @@
         width: 310px;
     }
     .activities {
-        transform: translateY(-100px);
+        transform: translateY(-50px);
     }
     .activities .programs .care{
         width: 300px;
@@ -369,6 +369,9 @@
         border-radius: 10px;
     }
 
+    .ours{
+        margin-top: -30px;
+    }
     .ours .inner{
         display: flex;
         flex-flow: column wrap;
@@ -435,9 +438,11 @@
 
     .facility-bg{
         height: 500px;
+        background: none;
     }
     .facilities{
         margin-top: 2px;
+       
     }
     .room {
         flex: 200px;
@@ -460,7 +465,7 @@
         margin-top: 10px;
     }
     .room .plays p{
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
         margin-left: 10px;
     }
@@ -588,11 +593,68 @@
             font-size: 7px;
         }
 
-
+    /* .programs phone responsiveness */
+    .slider-box .allow{
+        height: 200px;
+    }
+    .slider-box .slider-text{
+        top: 50%;
+        left: 20%;
+    }
+    .slider-box .slider-text h1{
+        font-size: 26px;
+        letter-spacing: 1.5px;
+    }
+    .parent{
+        margin-top: -7rem;
+    }
+    .parent h3{
+        margin-left: 2.5rem;
+        text-align: left;
+        width: 80%;
+    }
+    .activities{
+        margin-top: 30px;
+        /* padding-top: 30px; */
+    }
+    .grid {
+        flex-flow: column wrap;
+    }
+    .grid .program {
+        height: 330px;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        /* flex-flow: column wrap; */
+    }
+    .grid .program img{
+        height: 150px;
+    }
+    .grid .program .program-content{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 10px;
+    }
+    .grid .program .program-content h1{
+            text-align: center;
+    }
+    .grid .program .program-content p{
+        line-height: normal;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .minigallery{
+        /* margin-left: 50px; */
+    }
+    .minigallery img{
+        height: 120px;
+        width: 150px;
+        margin-top: 10px;
+    }
     /* contact_us responsive */
     .contact {
         height: 15rem;
-
     }
 
 

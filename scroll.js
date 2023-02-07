@@ -1,3 +1,7 @@
+// responsive Header
+
+//end ready
+
 ScrollReveal().reveal(".team1", { delay: 300 });
 ScrollReveal().reveal(".team2", { delay: 400 });
 ScrollReveal().reveal(".team3", { delay: 500 });

@@ -751,7 +751,7 @@ button {
 .plays p {
     /* text-align: center; */
     /* font-size: 26px; */
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: 40px;
     margin-top: 2px;
     font-size: 15px;
@@ -869,7 +869,7 @@ button {
 .aboutBanner {
     height: 30rem;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/278362073_376743961129998_3466514035956970775_n.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -1196,7 +1196,6 @@ form>input {
 .slider-box {
     /* margin-top: 20px; */
     height: 450px;
-    background-color: aqua;
     position: relative;
 }
 
@@ -1281,25 +1280,18 @@ form>input {
 }
 
 .grid {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-.activities .title {
-    margin-top: 10rem;
-    color: #7E30A3;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
+.activities .titre {
+    padding-top: 50px;
 }
 
 .grid .program {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column wrap;
     box-shadow: 0px 0px 0px grey;
     transition: box-shadow .6s ease-out;
     box-shadow: .8px .9px 3px grey;
@@ -1325,15 +1317,15 @@ form>input {
 
 .grid .program .program-content {
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
     /* padding: 2rem; */
 }
 
-.grid .program .program-content h2 {
+.grid .program .program-content h1 {
     font-size: 2rem;
     font-weight: 500;
-    color: #0d0d0d;
-    margin-bottom: 1.5rem;
+    /* color: #0d0d0d; */
+    /* margin-bottom: 1.5rem; */
 }
 
 .grid .program .program-content p {
@@ -1353,8 +1345,8 @@ form>input {
 }
 
 .minigallery img {
-    height: 15rem;
-    width: 18rem;
+    height: 13rem;
+    width: 22rem;
 }
 
 /* events and gallery page style start */
@@ -1538,48 +1530,48 @@ form>input {
     font-family: "Titan one" cursive;
 } */
 
-.gallery {
-    /* position: absolute;
+/* .gallery {
+    position: absolute;
     top: 325vh;
-    left: 3%; */
-    /* margin: 10px;
-    padding: 20px; */
+    left: 3%;
+    margin: 10px;
+    padding: 20px;
     margin-left: 150px;
-    /* padding: 20px; */
+    padding: 20px;
 
 }
 
 .gallery1 {
-    /* position: absolute;
+    position: absolute;
     top: 358vh;
-    left: 3%; */
+    left: 3%;
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery2 {
-    /* position: absolute;
+    position: absolute;
     top: 391vh;
-    left: 3%; */
+    left: 3%;
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery3 {
-    /* position: absolute;
+    position: absolute;
     top: 424vh;
-    left: 3%; */
+    left: 3%;
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery4 {
-    /* position: absolute;
+    position: absolute;
     top: 458vh;
-    left: 3%; */
+    left: 3%;
     margin: 10px;
     padding: 20px;
 
@@ -1635,4 +1627,82 @@ img {
         opacity: 1;
         transform: translateY(0px);
     }
+} */
+
+/*event page gallery section styling */
+.gallery {
+
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 50px;
+
+    background-color: #222;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, .025) 10%, transparent 0),
+        linear-gradient(#222, #000);
+    background-size: .75em 100%, 100% 100%;
+    background-attachment: fixed;
+
+}
+
+#photo {
+    line-height: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+#photo img {
+    width: 300px !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    /* to match column gap */
+    filter: grayscale(100%);
+    transition: filter 2s;
+    transform: scale(1);
+}
+
+#photo img:hover {
+    filter: none;
+    z-index: 2;
+    transform: scale(2);
+}
+
+.gall-text {
+    width: 50%;
+    /* background-color: #ff4da6; */
+    margin-left: 300px;
+    margin-bottom: -20px;
+}
+
+.gall-text h2 {
+    color: #3e6fc4;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.gall-text h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.gallery .down h2 {
+    margin-top: 260px;
+}
+
+.gallery .down h2 a {
+    text-decoration: none;
+    font-size: 16px;
+    background: #2260cc;
+    color: #fff;
+    padding: 10px 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    border: 2px solid transparent;
 }
