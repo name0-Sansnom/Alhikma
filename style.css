@@ -213,29 +213,31 @@ h2 {
 }
 
 .hikmah {
-    padding-top: 10px;
+    margin-top: 30px;
     /* padding-bottom: 50px; */
-    text-align: center;
+    /* text-align: center; */
+    width: 70%;
+    margin-left: 250px;
 }
 
 .hikmah p {
     font-size: 18px;
     font-weight: 300;
-    width: 60%;
-    margin-left: 300px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    /* width: 65%; */
+    /* margin-left: 300px; */
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
     /* color: #fff; */
-    /* margin-inline-start: 10px;
-        margin-inline-end: 10px; */
+    /* margin-inline-start: 10px; */
+        margin-inline-end: 10px;
 }
 
-.most {
+/* .most {
     padding-left: 30%;
     padding-top: 10px;
     font-size: 19px;
     font-style: italic;
-}
+} */
 
 /* .hikmah {
     font-size: 19px;
@@ -244,17 +246,17 @@ h2 {
 } */
 
 .vision-box {
-    background-image: url(image/school-supplies-top-view-chalkboard.jpg);
+    /* background-image: url(image/school-supplies-top-view-chalkboard.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     height: 600px;
     /* object-fit: fill; */
 }
 
 .vision {
-    padding-top: 100px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 12%;
@@ -294,10 +296,10 @@ button {
 
 /* A word from our founder style in action lol  */
 .founder {
-    background-image: url(image/AdobeStock_163089032_Preview.jpeg);
+    /* background-image: url(image/AdobeStock_163089032_Preview.jpeg);
     background-position: center center;
     background-repeat: repeat;
-    padding-top: 50px;
+    padding-top: 50px; */
     margin-top: 50px;
 
 }
@@ -316,8 +318,8 @@ button {
 }
 
 .founder .founder-inner .speech img {
-    height: 365px;
-    width: 385px;
+    height: 400px;
+    width: 420px;
     border-radius: 15px;
 }
 
@@ -405,9 +407,9 @@ button {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 2; */
     color: #fff;
     width: 80%;
     margin-left: 150px;
@@ -415,13 +417,13 @@ button {
 }
 
 .ours .inner .left h2 {
-    width: 65%;
+    /* width: 65%; */
     font-size: 32px;
     font-family: 'quicksand', cursive;
-    display: block;
+    /* display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    line-height: 50px;
+    line-height: 50px; */
 }
 
 .ours .inner .left p {
@@ -609,7 +611,8 @@ button {
 }
 
 .carousel .slick-prev {
-    left: -40px;
+    left: 10px;
+    z-index: 1;
 }
 
 .carousel .slick-next {
@@ -627,8 +630,8 @@ button {
     height: 20px;
     content: "•";
     text-align: center;
-    opacity: 0.50;
-    color: #8123AD;
+    opacity: 0.60;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -747,7 +750,7 @@ button {
 
 .plays p {
     /* text-align: center; */
-    font-size: 26px;
+    /* font-size: 26px; */
     font-weight: bold;
     margin-left: 40px;
     margin-top: 2px;
@@ -791,6 +794,7 @@ button {
     height: 160px;
     transform: translateX(-50%) rotateY(180deg) scaleX(180deg);
     display: block;
+    overflow: hidden;
     /* margin-left: -50px; */
     /* width: calc(100% + 1.3px); */
     /* position: relative;
@@ -804,6 +808,7 @@ button {
 
 .box-shape svg:not([fill]) {
     fill: currentColor;
+    overflow: hidden;
 }
 
 .upper {
@@ -969,7 +974,12 @@ button {
     margin-left: 15%;
     margin-top: 20px;
 }
-
+.section4, .section6{
+    margin-top: 100px;
+}
+.section5{
+    margin-top: 150px;
+}
 .values {
     text-align: center;
     display: flex;
@@ -1338,6 +1348,7 @@ form>input {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -1350,7 +1361,7 @@ form>input {
 .container {
     height: 120vh;
     width: 100%;
-    background-image: url(img/banner.jpg);
+    background-image: url(image/alhikma45.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1382,20 +1393,25 @@ form>input {
     background-color: #7E30A3;
     height: 3px;
 }
-
+.cards{
+    /* display: flex;
+    justify-content: space-between; */
+    margin-left: 250px;
+}
 .cards .box:hover {
     border: 2px solid #777;
 }
 
 .cards .box {
-    position: absolute;
+    /* position: absolute;
     left: 14.5%;
-    top: 145vh;
+    top: 145vh; */
     width: 950px;
     height: 320px;
     box-shadow: 2px 2px 3px #ccc;
     background-color: #faf9f9;
     border-radius: 20px;
+    margin-top: 50px;
 }
 
 .box {
@@ -1407,24 +1423,24 @@ form>input {
 }
 
 .cards .box h3 {
-    position: absolute;
+    /* position: absolute;
     left: 51%;
-    top: 4vh;
+    top: 4vh; */
     font-size: 32px;
     font-weight: 450;
     color: #7E30A3;
 }
 
 .cards .box p {
-    position: absolute;
+    /* position: absolute;
     left: 51%;
-    top: 14vh;
+    top: 14vh; */
     font-size: 25px;
     font-weight: 80;
     color: #000000;
 }
 
-.cards .box2:hover {
+/* .cards .box2:hover {
     border: 2px solid #777;
 }
 
@@ -1506,62 +1522,64 @@ form>input {
     font-size: 25px;
     font-weight: 80;
     color: #000000;
-}
+} */
 
-.event {
+/* .event {
     display: flex;
     flex-direction: row;
-}
+} */
 
-.event h2 {
+/* .event h2 {
     position: absolute;
     left: 43%;
     top: 312vh;
     font-size: 40px;
     color: #7E30A3;
     font-family: "Titan one" cursive;
-}
+} */
 
 .gallery {
-    position: absolute;
+    /* position: absolute;
     top: 325vh;
-    left: 3%;
-    margin: 10px;
-    padding: 20px;
+    left: 3%; */
+    /* margin: 10px;
+    padding: 20px; */
+    margin-left: 150px;
+    /* padding: 20px; */
 
 }
 
 .gallery1 {
-    position: absolute;
+    /* position: absolute;
     top: 358vh;
-    left: 3%;
+    left: 3%; */
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery2 {
-    position: absolute;
+    /* position: absolute;
     top: 391vh;
-    left: 3%;
+    left: 3%; */
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery3 {
-    position: absolute;
+    /* position: absolute;
     top: 424vh;
-    left: 3%;
+    left: 3%; */
     margin: 10px;
     padding: 20px;
 
 }
 
 .gallery4 {
-    position: absolute;
+    /* position: absolute;
     top: 458vh;
-    left: 3%;
+    left: 3%; */
     margin: 10px;
     padding: 20px;
 

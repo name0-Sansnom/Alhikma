@@ -220,6 +220,9 @@
     body {
         overflow-x: hidden;
     }
+    h1{
+        font-size: 20px;
+    }
 
     .menu-top {
         position: relative;
@@ -248,56 +251,230 @@
         background: #ddd;
 
     }
-
+    .menu{
+        margin-top: -10px;
+        /* margin-left: 100px; */
+        /* padding-bottom: 20px; */
+    }
+    .menu-trigger{
+        /* margin-left: -250px; */
+        padding-bottom: 8px;
+        /* margin-top: -5px; */
+    }
+    .menu-trigger i{
+        font-size: 30px;
+        margin-top: 5px;
+    }
     .swiper-slide img {
-        height: auto;
+       height: auto;
     }
 
-    .swiper-slide .text {
-        font-size: 10px;
-        left: 5%;
+    .swiper-slide .text h1 {
+        font-size: 15px;
+        transform: translateX(-60px);
+        letter-spacing: 0.5px;
     }
+    .swiper-slide .text span {
+            font-size: 15px;
+            margin-left: -100px;
+            /* transform: translateX(-60px); */
+            /* letter-spacing: 0.5px; */
+        }
 
     .top {
         display: none;
     }
 
-    .nameless {
-        height: auto;
+    .section-one {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex: 200px; */
+        /* padding-left: 50px; */
+        
     }
-
-    .nameless .boxes {
-        margin-bottom: 40px;
+    .section-one .cart {
+        margin-left: 40px;
+        width: 105px;
     }
-
-    .nameless .boxes h3 {
+    .section-one h2 {
         font-size: 14px;
         padding-left: 10px;
+        /* color: red; */
     }
 
-    .nameless .boxes img {
+    .section-one img {
         height: 60px;
         width: 70px;
     }
+    .hikmah{
+        margin-left: 60px;
+    }
+    .hikmah p{
+        font-size: 14px;
+            font-weight: 100;
+            /* width: 90%;
+            margin-left: 20px;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 280px; */
+            /* margin-inline-end: 10px; */
+    }
 
-    .founder {
+    .vision {
+        margin-left: -20px;
+        
+    }
+    .vision-box .vision .five h1{
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+    .vision-box .vision .five p, button{
         margin-left: 40px;
     }
-
-    .program {
-        margin-top: 50px;
+    .vision-box .vision .five p{
+        color: rgb(27, 27, 27);
     }
 
+    .founder{
+        margin-top: 350px;
+    }
+    .founder .founder-inner{
+        margin-left: 35px;
+        margin-bottom: -80px;
+    }
+    .founder .founder-inner .speech img{
+        height: 300px;
+        width: 310px;
+    }
+    .activities {
+        transform: translateY(-100px);
+    }
+    .activities .programs .care{
+        width: 300px;
+        height: 360px;
+        
+    }
+    .activities .programs .care img{
+            width: 100%;
+            height: 200px;
+    }
+    .activities .programs .care p{
+        margin-top: 15px;
+        margin-right: 12px;
+    }
+    .activities .programs .care button{
+        width: 100%;
+        margin-left: 7px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .ours .inner{
+        display: flex;
+        flex-flow: column wrap;
+        /* justify-content: space-between; */
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 50%;
+    }
+    .ours .inner .left h2{
+        font-size: 20px;
+        width: 45%;
+    }
+    .ours .inner .left p {
+        font-size: 16px;
+    }
+    .ours .inner .left .svg-text{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .ours .inner .left .svg-text i{
+        font-size: 32px;
+        margin-left: -10px;
+    }
+    .ours .inner .right{
+        margin-top: -26rem;
+    }
+    .ours .inner .right img{
+       width: 230px;
+        height: 220px;
+        margin-left: 10px;
+    }
+    .unique-bg{
+        height: auto;
+    }
+    .unique{
+        margin-top: -50px;
+    }
+    .unique h1{
+        margin-top: -70px;
+    }
+    .mess{
+        margin-top: -200px;
+    }
+    .mess .good{
+        width: 280px;
+        height: 340px;
+    }
+    .mess .good img{
+        width: 100%;
+        height: 180px;
+    }
+    .mess .good p{
+        font-size: 14px;
+    }
+    .mess .good h1{
+        font-size: 18px;
+    }
     .wrapper {
-        margin-left: 20px;
+        margin-left: 17px;
+    }
+    .carousel .slick-prev {
+            left: -20px;
     }
 
+    .facility-bg{
+        height: 500px;
+    }
+    .facilities{
+        margin-top: 2px;
+    }
+    .room {
+        flex: 200px;
+        margin-left: -62px;
+        margin-top: -5px;
+    }
+    .room .plays{
+        width: 100px;
+        margin-left: 50px;
+        margin-top: 30px;
+        /* justify-content: space-between; */
+    }
+    .room .plays img{
+        height: 110px;
+        width: 120px;
+    }
+    .room .plays h3{
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+    .room .plays p{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .footer .upper{
+        margin-top: -30px;
+    }
     .footer p {
         font-size: 14px;
     }
 
-    .footer h2 {
-        font-size: 20px;
+    .footer h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
     .footer h4 {
@@ -306,7 +483,7 @@
     }
 
     .contact-second {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .footer .contact-second h2 {
@@ -317,10 +494,10 @@
         margin-top: 30px;
     }
 
-    hr {
-        margin-left: 50px;
+    .footer hr {
+        margin-left: 0;
         margin-top: 15px;
-        width: 70%;
+        width: 100%;
     }
 
     /* about_us phone mode responsiveness styling starting */
@@ -328,7 +505,7 @@
             background-color: #7e30a3;
             height: 0.2rem;
             width: 4.5rem;
-            margin-left: 40%;
+            margin-left: -150%;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -337,14 +514,16 @@
             font-size: 22px;
         }
     
-    
-        .section2 .mission {
+        .section2{
+            display: none;
+        }
+        .mission {
             display: flex;
             flex-flow: column wrap;
             justify-content: space-between;
         }
     
-        .section2 .mission .missionImage {
+        .mission .missionImage {
             width: 100%;
             height: 200px;
         }
