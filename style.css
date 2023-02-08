@@ -2,8 +2,16 @@
 
 * {
     margin: 0;
-
+    /* overflow-x: hidden !important; */
     padding: 0;
+}
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -415,15 +423,11 @@ button {
     margin-left: 150px;
     margin-top: 50px;
 }
-
-.ours .inner .left h2 {
-    /* width: 65%; */
-    font-size: 32px;
+.ours .inner .left{
     font-family: 'quicksand', cursive;
-    /* display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    line-height: 50px; */
+}
+.ours .inner .left h2 {
+    font-size: 32px;
 }
 
 .ours .inner .left p {
@@ -777,7 +781,7 @@ button {
 
 .box-shape {
     background-color: #8123AD;
-    overflow: hidden;
+    overflow-x: hidden;
     /* position: absolute;
         top: -15%;
         left: 0; */
@@ -794,7 +798,7 @@ button {
     height: 160px;
     transform: translateX(-50%) rotateY(180deg) scaleX(180deg);
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
     /* margin-left: -50px; */
     /* width: calc(100% + 1.3px); */
     /* position: relative;
@@ -803,12 +807,12 @@ button {
 }
 
 .box-shape svg:not(:root) {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .box-shape svg:not([fill]) {
     fill: currentColor;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .upper {
