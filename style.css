@@ -423,18 +423,19 @@ button {
     margin-left: 150px;
     margin-top: 50px;
 }
-.ours .inner .left{
+/* .ours .inner .left{
     font-family: 'quicksand', cursive;
-}
+} */
 .ours .inner .left h2 {
     font-size: 32px;
+    font-family: 'quicksand', cursive;
 }
 
 .ours .inner .left p {
     width: 65%;
     font-size: 16px;
+    font-family: 'quicksand', cursive;
     margin-top: 30px;
-    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -449,7 +450,7 @@ button {
     width: 45%;
     border-radius: 50px;
     margin-top: 20px;
-    text-align: center;
+    text-align: right;
     color: #3d3d3d;
     padding: 10px 20px 10px 15px;
 }

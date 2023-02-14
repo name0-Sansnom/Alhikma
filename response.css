@@ -214,8 +214,8 @@
 
 /* General style for phone mode responiveness */
 
-@media screen and (min-width:375px) and (max-width: 460px) {
-
+@media screen and (min-width:320px) and (max-width: 460px) {
+/* 
     
 html {
         overflow-x: hidden;
@@ -224,7 +224,7 @@ html {
     body {
         position: relative;
         overflow-x: hidden;
-    }
+    } */
     h1{
         font-size: 20px;
     }
@@ -384,11 +384,11 @@ html {
         margin-top: 5px;
         margin-left: 10px;
         width: 50%;
-        overflow-x: hidden !important;
+        /* overflow-x: hidden !important; */
     }
-    .ours .inner .left{
+    /* .ours .inner .left{
         overflow-x: hidden !important;
-    }
+    } */
     .ours .inner .left h2{
         font-size: 20px;
         width: 45%;
@@ -399,18 +399,19 @@ html {
     .ours .inner .left .svg-text{
         margin-top: 10px;
         font-size: 15px;
+        width: 40%;
     }
     .ours .inner .left .svg-text i{
-        font-size: 32px;
-        margin-left: -10px;
+        font-size: 28px;
+        margin-left: -12px;
     }
     .ours .inner .right{
         margin-top: -26rem;
-        overflow-x: hidden !important;
+        /* overflow-x: hidden !important; */
     }
     .ours .inner .right img{
-       width: 230px;
-        height: 220px;
+       width: 180px;
+        height: 180px;
         margin-left: 10px;
     }
     .unique-bg{
@@ -781,4 +782,338 @@ html {
     }
 }
 
-responsiveness for older and phones with small 
+/* responsiveness for older and phones with small screens  */
+/* homepage section starts */
+/* @media screen and (min-width:320px) and (max-width: 368px) {
+
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .menu-top {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        top: 5px;
+        z-index: 99;
+    }
+
+    .logo img {
+        margin-left: 0.1em;
+
+    }
+
+    ul li {
+        width: 25vh;
+
+    }
+
+    ul li a {
+        display: block;
+        text-align: left;
+        color: #7E30A3;
+        background: #ddd;
+
+    }
+
+    .menu {
+        margin-top: -10px;
+    
+    }
+
+    .menu-trigger {
+
+        padding-bottom: 8px;
+
+    }
+
+    .menu-trigger i {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .swiper-slide img {
+        height: auto;
+    }
+
+    .swiper-slide .text h1 {
+        font-size: 15px;
+        transform: translateX(-60px);
+        letter-spacing: 0.5px;
+    }
+
+    .swiper-slide .text span {
+        font-size: 15px;
+        margin-left: -100px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .section-one {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .section-one .cart {
+        margin-left: 40px;
+        width: 105px;
+    }
+
+    .section-one h2 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .section-one img {
+        height: 60px;
+        width: 70px;
+    }
+
+    .hikmah {
+        margin-left: 60px;
+    }
+
+    .hikmah p {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .vision {
+        margin-left: -20px;
+
+    }
+
+    .vision-box .vision .five h1 {
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+
+    .vision-box .vision .five p,
+    button {
+        margin-left: 40px;
+    }
+
+    .vision-box .vision .five p {
+        color: rgb(27, 27, 27);
+    }
+
+    .founder {
+        margin-top: 350px;
+    }
+
+    .founder .founder-inner {
+        margin-left: 35px;
+        margin-bottom: -80px;
+    }
+
+    .founder .founder-inner .speech img {
+        height: 300px;
+        width: 310px;
+    }
+
+    .activities {
+        transform: translateY(-50px);
+    }
+
+    .activities .programs .care {
+        width: 300px;
+        height: 360px;
+
+    }
+
+    .activities .programs .care img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .activities .programs .care p {
+        margin-top: 15px;
+        margin-right: 12px;
+    }
+
+    .activities .programs .care button {
+        width: 100%;
+        margin-left: 7px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .ours {
+        margin-top: -30px;
+    }
+
+    .ours .inner {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 50%;
+        overflow-x: hidden !important;
+    }
+
+    .ours .inner .left {
+        overflow-x: hidden !important;
+    }
+
+    .ours .inner .left h2 {
+        font-size: 20px;
+        width: 45%;
+    }
+
+    .ours .inner .left p {
+        font-size: 16px;
+    }
+
+    .ours .inner .left .svg-text {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .ours .inner .left .svg-text i {
+        font-size: 32px;
+        margin-left: -10px;
+    }
+
+    .ours .inner .right {
+        margin-top: -26rem;
+        overflow-x: hidden !important;
+    }
+
+    .ours .inner .right img {
+        width: 230px;
+        height: 220px;
+        margin-left: 10px;
+    }
+
+    .unique-bg {
+        height: auto;
+    }
+
+    .unique {
+        margin-top: -50px;
+    }
+
+    .unique h1 {
+        margin-top: -70px;
+    }
+
+    .mess {
+        margin-top: -200px;
+    }
+
+    .mess .good {
+        width: 280px;
+        height: 340px;
+    }
+
+    .mess .good img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .mess .good p {
+        font-size: 14px;
+    }
+
+    .mess .good h1 {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        margin-left: 17px;
+    }
+
+    .carousel .slick-prev {
+        left: -20px;
+    }
+
+    .facility-bg {
+        height: 500px;
+        background: none;
+    }
+
+    .facilities {
+        margin-top: 2px;
+
+    }
+
+    .room {
+        flex: 200px;
+        margin-left: -62px;
+        margin-top: -5px;
+    }
+
+    .room .plays {
+        width: 100px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .room .plays img {
+        height: auto;
+        width: 100px;
+    }
+
+    .room .plays h3 {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .room .plays p {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .footer .upper {
+        margin-top: -30px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .footer h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .footer h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contact-second {
+        margin-top: 40px;
+    }
+
+    .footer .contact-second h2 {
+        text-align: center;
+    }
+
+    .social-second {
+        margin-top: 30px;
+    }
+
+    .footer hr {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+    } */
