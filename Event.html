@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Add this for font-awesome if you have not integrated it in your work -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>Events page</title>
+    <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="response.css">
 </head>
@@ -42,7 +42,7 @@
     <!-- for placing navbar oon top of the slider in responsive mode  -->
     <div class="menu-top">
         <!-- Responsive Header -->
-        <section>
+        <section class="nav-block">
             <header>
                 <div class="logo">
                     <a href="#">
@@ -67,123 +67,451 @@
         </section>
     </div>
     <!-- navbar ends here -->
+    <!-- hero banner -->
 
-    <div class="container">
-        <h1>Events</h1>
+    <div class="events_hero">
+        <h2> Our Events</h2>
     </div>
+    <!-- upcoming events -->
+    <h1 style="margin: 35px 0px;">upcoming Events</h1>
+    <section class="re-events">
 
-    <div class="about">Be updated about our latest Events</div>
+        <div class="leftBox">
+            <div class="contant">
+                <h1 style="color: #fff;">
+                    Events and Shows
+                </h1>
 
-    <div class="bar">
-        <hr>
-    </div>
+                <p>
+                    With the idea of imparting programming
+                    knowledge, Mr. Sandeep Jain, an IIT
+                    Roorkee alumnus started a dream,
+                    GeeksforGeeks. Whether programming
+                    excites you or you feel stifled,
+                    wondering how to prepare for
+                    interview questions or
+                    how to ace data structures and
+                    algorithms, GeeksforGeeks is a
+                    one-stop solution. With every
+                    tick of time, we are adding arupcomings
+                    in our quiver. From articles on
+                    various computer science subjects
+                    to programming problems for practice,
+                    from basic to premium courses, from
+                    technologies to entrance examinations,
+                    we have been building ample content
+                    with superior quality. In a short
+                    span, we have built a community of
+                    1 Million+ Geeks around the world, 20,000+
+                    Contributors and 500+ Campus Ambassadors
+                    in various colleges across the nation.
+                    Our success stories include a lot of
+                    students who benefitted in their
+                    placements and landed jobs at tech
+                    giants. Our vision is to build a gigantic
+                    network of geeks and we are only a
+                    fraction of it yet.
+                </p>
 
-    <div class="cards">
-        <div class="box">
-            <img src="image/9.jpg" width="45%" height="320vh">
-            <div class="stupidity">
-                <h3>Al-Hikmah Ramadan 2022</h3>
-                <p>Each year at Ramadan, Al-Hikmah hosts some special
-                    events for the children to celebrate this special time of
-                    the year. Last year, we organised several prayer times at
-                    marina park as well as iftars at our school.</p>
             </div>
         </div>
-        
-        <div class="box">
-            <img src="image/9.jpg" width="45%" height="320vh">
-            <div class="stupidity">
-                <h3>Al-Hikmah Ramadan 2022</h3>
-                <p>Each year at Ramadan, Al-Hikmah hosts some special
-                    events for the children to celebrate this special time of
-                    the year. Last year, we organised several prayer times at
-                    marina park as well as iftars at our school.</p>
-            </div>
+
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            15 <br><span>March</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Where is the event happening?
+                        </h3>
+
+                        <p>
+                            With the idea of imparting programming
+                            knowledge, Mr. Sandeep Jain, an IIT
+                            Roorkee alumnus started a dream,
+                            GeeksforGeeks. Whether programming
+                            excites you or you feel stifled,
+                            how to ace data structures and
+                            algorithms, GeeksforGeeks is a
+                            one-stop solution.
+                        </p>
+
+
+                        <a href="#">View Details</a>
+                    </div>
+                    <!-- <div style="clear:both;"></div> -->
+                </li>
+
+                <li>
+                    <div class="time">
+                        <h2>
+                            27 <br><span>April</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Where is the event happening?
+                        </h3>
+                        <p>
+                            With the idea of imparting programming
+                            knowledge, Mr. Sandeep Jain, an IIT
+                            Roorkee alumnus started a dream,
+                            GeeksforGeeks. Whether programming
+                            excites you or you feel stifled,
+                            how to ace data structures and
+                            algorithms, GeeksforGeeks is a
+                            one-stop solution.
+                        </p>
+
+                        <a href="#">View Details</a>
+                    </div>
+                    <!-- <div style="clear:both;"></div> -->
+                </li>
+
+                <li>
+                    <div class="time">
+                        <h2>
+                            12 <br><span>August</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Where is the event happening?
+                        </h3>
+
+                        <p>
+                            With the idea of imparting programming
+                            knowledge, Mr. Sandeep Jain, an IIT
+                            Roorkee alumnus started a dream,
+                            GeeksforGeeks. Whether programming
+                            excites you or you feel stifled,
+                            how to ace data structures and
+                            algorithms, GeeksforGeeks is a
+                            one-stop solution.
+                        </p>
+
+
+                        <a href="#">View Details</a>
+                    </div>
+                    <!-- <div style="clear:both;"></div> -->
+                </li>
+            </ul>
         </div>
-        
-        <div class="box">
-            <img src="image/9.jpg" width="45%" height="320vh">
-            <div class="stupidity">
-                <h3>Al-Hikmah Ramadan 2022</h3>
-                <p>Each year at Ramadan, Al-Hikmah hosts some special
-                    events for the children to celebrate this special time of
-                    the year. Last year, we organised several prayer times at
-                    marina park as well as iftars at our school.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- <div class="event">
-        <h1>Our Gallery</h1>
-
-
-        <div class="gallery">
-            <img src="image/alhikma90.jpg" height="200px" width="300px">
-            <img src="image/alhikma90.jpg" height="200px" width="300px">
-            <img src="image/alhikma90.jpg" height="200px" width="300px">
-            <img src="image/alhikma90.jpg" height="200px" width="300px">
-        </div>
-
-
-
-        <div class="gallery">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-        </div>
-
-        <div class="gallery">
-            <img src="image/3.jpg" height="200px" width="300px">
-            <img src="image/3.jpg" height="200px" width="300px">
-            <img src="image/3.jpg" height="200px" width="300px">
-            <img src="image/3.jpg" height="200px" width="300px">
-        </div>
-
-        <div class="gallery">
-            <img src="image/IMG_4666.jpg" height="200px" width="300px">
-            <img src="image/IMG_4666.jpg" height="200px" width="300px">
-            <img src="image/IMG_4666.jpg" height="200px" width="300px">
-            <img src="image/IMG_4666.jpg" height="200px" width="300px">
-        </div>
-
-        <div class="gallery">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-            <img src="image/alhikma45.jpg" height="200px" width="300px">
-        </div>
-
-
-    </div> -->
+    </section>
 
     <!-- our Gallery structure -->
-    <div class="gallery">
-        <div class="gall-text">
-            <h2>Our Gallery</h2>
-            <h1>Influencing Lives Of Aspiring Ghana Young Entrepreneurs</h1>
+    <div class="container">
+        <h1 style=" margin-top: 30px">Our Gallery</h1>
+        <p style=" margin-top: 15px"> click on Image to View in Gallery mode</p>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_1.jpg" data-title="Al-Hikmah">
+                        <img src="images/IMG_1.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_2.jpg" data-title="Al-Hikmah"><img src="images/IMG_2.jpg" alt=""></a>
+                    
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_3.jpg" data-title="Al-Hikmah">
+                        <img src="images/IMG_3.jpg" alt="">
+                    </a>
+                    
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_4.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_4.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_5.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_5.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_6.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_6.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_7.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_7.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_8.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_8.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_9.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_9.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_10.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_10.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_11.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_11.jpg" alt="">
+                        
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_12.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_12.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_13.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_13.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_14.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_14.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_15.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_15.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_16.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_16.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_17.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_17.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_18.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_18.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_19.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_19.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_20.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_20.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_21.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_21.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_22.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_22.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_23.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_23.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_24.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_24.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_25.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_25.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_26.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_26.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_27.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_27.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <a data-lightbox="gridImage" href="images/IMG_28.jpg" data-title="Al-Hikmah">
+                    <img src="images/IMG_28.jpg" alt="">
+
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-    
-        <div id="photo">
-            <img src="image/alhikma17.jpg" alt="" />
-            <img src="image/1.jpg" alt="" />
-            <img src="image/2.jpg" alt="" />
-            <img src="image/3.jpg" alt="" />
-            <img src="image/4.jpg" alt="" />
-            <img src="image/5.jpg" alt="" />
-            <img src="image/6.jpg" alt="" />
-            <img src="image/7.jpg" alt="" />
-            <img src="image/8.jpg" alt="" />
-            <img src="image/9.jpg" alt="" />
-            <img src="image/14.jpg" alt="" />
-            <img src="image/alhikma7.jpg" alt="" />
-            <img src="image/alhikma45.jpg" alt="" />
-            <img src="image/alhikma47.jpg" alt="" />
-            <img src="image/bb.jpg" alt="" />
-            <img src="image/IMG_4666.jpg" alt="" />
-            <img src="image/IMG_7636.jpg" alt="" />
-            <img src="image/IMG_7673.jpg" alt="" />
+
+        <div id="load-more"> load more </div>
+
+        <div id="load-less">Load Less</div>
+
+    </div>
+
+    <!-- Embeded social media handles frames  -->
+
+    <div class="iframe-box">
+        <h1>Our Socaial Feeds</h1>
+        <h4>Al-Hikmah is close to you than Ever <span>Follow our Feeds on Real time to always be up to date</span></h4>
+        <div class="frames">
+            <div class="frame-left">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Falhikmahislamicmontessori%2F%3F_rdc%3D1%26_rdr&tabs=timeline&width=900&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
+                    width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="frame-right">
+                <iframe width="500" height="415" src="https://www.youtube.com/embed/cFpZSL2eeS8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
@@ -258,11 +586,13 @@
     </div>
 
 
-<!-- Responsive header js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Responsive header js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script src="java.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="java.js"></script>
+    <script src="lightbox.min.js"></script>
+    <script src="main.js"></script>
 
 
 
