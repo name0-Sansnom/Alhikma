@@ -28,7 +28,7 @@ p{
 .aboutBanner{
     height: 30rem;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/278362073_376743961129998_3466514035956970775_n.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/14.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -101,8 +101,8 @@ p{
 
 .missionImage{
     width: 50%;
-    height: 400px;
-    background-image: url('images/IMG_0535.jpg');
+    height: 500px;
+    background-image: url('images/Mission.jpg');
      background-position: 100%;
      background-repeat: no-repeat;
      background-size: cover;
@@ -129,13 +129,13 @@ p{
 }
 
 .coreValues{
-    width: 60%;
+    width: 50%;
     height: 490px;
-    background-image: url('images/CORE-VALUES-V11-2048x1366.jpg');
+    background-image: url('images/core\ values2.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 20px;
     /* animation: myAnim 2s ease-out 0s 2 normal forwards; */
 }
@@ -172,13 +172,12 @@ p{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
-    margin-top: 5%; 
+    justify-content: center;
 }
 
 #icon{
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 7%;
+    margin-left: 7%;
     margin-top: 30px;
     
 }
@@ -203,7 +202,7 @@ iconify-icon{
 
 
 .section5{
-    margin-top: 30px;
+    margin-top: 5%;
 }
 
 .section5 p{
@@ -224,15 +223,21 @@ iconify-icon{
     margin-top: 5%; 
 }
 
+.section6{
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
 .ourTeam{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+  
 
 #team{
     width: 20%;
-    height: 400px;
+    height: 300px;
     box-shadow: 5px 5px 5px rgb(128, 128, 128);
     margin-top: 2%;
     margin-right: 2%;
@@ -240,9 +245,24 @@ iconify-icon{
     border-radius: 10px;
 }
 
+/* .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  } */
+
 #team img{
     width: 100%;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -255,9 +275,6 @@ iconify-icon{
     text-align: center;
 }
 
-.section6{
-    margin-bottom: 30px;
-}
 
 
 /* responsiveness */

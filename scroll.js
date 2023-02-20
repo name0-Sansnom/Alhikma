@@ -5,6 +5,7 @@ ScrollReveal().reveal('.team4', { delay: 600 })
 ScrollReveal().reveal('.team5', { delay: 700 })
 ScrollReveal().reveal('.team6', { delay: 800 })
 ScrollReveal().reveal('.team7', { delay: 900 })
+ScrollReveal().reveal('.team8', { delay: 1000 })
 
 
 
