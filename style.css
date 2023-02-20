@@ -211,8 +211,6 @@ h2 {
     padding-right: 100px;
 }
 
-/* our vision style from maraim :start */
-
 .welcome {
     flex-wrap: wrap;
     font-size: 40px;
@@ -224,8 +222,6 @@ h2 {
 
 .hikmah {
     margin-top: 30px;
-    /* padding-bottom: 50px; */
-    /* text-align: center; */
     width: 70%;
     margin-left: 250px;
 }
@@ -233,37 +229,10 @@ h2 {
 .hikmah p {
     font-size: 18px;
     font-weight: 300;
-    /* width: 65%; */
-    /* margin-left: 300px; */
-    /* margin-block-start: 1em;
-    margin-block-end: 1em; */
-    /* color: #fff; */
-    /* margin-inline-start: 10px; */
+
     margin-inline-end: 10px;
 }
 
-/* .most {
-    padding-left: 30%;
-    padding-top: 10px;
-    font-size: 19px;
-    font-style: italic;
-} */
-
-/* .hikmah {
-    font-size: 19px;
-    margin-left: 30px;
-    margin-right: 20px;
-} */
-
-.vision-box {
-    /* background-image: url(image/school-supplies-top-view-chalkboard.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    height: 600px;
-    /* object-fit: fill; */
-}
 
 .vision {
     margin-top: 100px;
@@ -289,7 +258,6 @@ button {
 }
 
 .five p {
-    color: #fff;
     font-size: 18px;
     margin-right: 40px;
     margin-top: 15px;
@@ -306,11 +274,7 @@ button {
 
 /* A word from our founder style in action lol  */
 .founder {
-    /* background-image: url(image/AdobeStock_163089032_Preview.jpeg);
-    background-position: center center;
-    background-repeat: repeat;
-    padding-top: 50px; */
-    margin-top: 50px;
+    margin-top: 70px;
 
 }
 
@@ -328,14 +292,14 @@ button {
 }
 
 .founder .founder-inner .speech img {
-    height: 400px;
-    width: 420px;
+    height: 500px;
+    width: 48%;
     border-radius: 15px;
 }
 
 .founder .founder-inner .speech p {
     margin-top: 50px;
-    width: 696px;
+    width: 40%;
     height: 407px;
     text-align: center;
     font-size: 22px;
@@ -393,13 +357,14 @@ button {
 
 /* our school section sttyling start */
 .ours {
-    margin-top: 50px;
-    background-image: url(image/geometry-bg.jpg);
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(130, 36, 174, 0.784), rgba(130, 36, 174, 0.784)), url(image/geometry-bg.jpg);
     background-position: center center;
     background-repeat: repeat;
     width: 100%;
-    height: 600px;
-    position: relative;
+    padding-top: 30px;
+    /* height: 600px; */
+    /* position: relative; */
 }
 
 .overlay {
@@ -415,8 +380,9 @@ button {
 
 .ours .inner {
     display: flex;
-    justify-content: space-around;
-    position: absolute;
+    justify-content: space-between;
+    /* position: absolute; */
+    flex-wrap: wrap;
     /* top: 0; */
     /* left: 0; */
     /* z-index: 2; */
@@ -429,20 +395,25 @@ button {
 /* .ours .inner .left{
     font-family: 'quicksand', cursive;
 } */
-.ours .inner .left h2 {
+.ours h2 {
+    width: 35%;
+        margin-left: 10 0px;
     font-size: 32px;
     font-family: 'quicksand', cursive;
 }
 
-.ours .inner .left p {
-    width: 65%;
-    font-size: 16px;
+.ours p {
+    
+    color: #fff;
+    margin-left: 100px;
+    width: 35%;
+    font-size: 20px;
     font-family: 'quicksand', cursive;
     margin-top: 30px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    /* margin-block-start: 0em;
+    margin-block-end: 5em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 0px; */
     line-height: 28px;
 }
 
@@ -450,9 +421,9 @@ button {
     display: flex;
     justify-content: space-evenly;
     background-color: #fff;
-    width: 45%;
+    width: 125%;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: right;
     color: #3d3d3d;
     padding: 10px 20px 10px 15px;
@@ -465,44 +436,35 @@ button {
 }
 
 .ours .inner .right {
-    width: 600px;
-    height: 600px;
+    /* width: 600px;
+    height: 600px; */
     margin-top: 80px;
 }
 
 .ours .inner .right img {
     height: 400px;
-    max-width: 100%;
+    width: auto;
     border: none;
     border-radius: 20px;
+    margin-top: -100px;
 }
 
 /* Our .uniqueness section style from mariam */
 .unique-bg {
-    margin-top: 50px;
+    /* margin-bottom: -580px; */
+    /* transform: translateY(500px); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(image/vec4.jpg);
     background-position: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 60rem;
+    height: 50rem;
+    /* margin: auto; */
     /* object-fit: cover; */
     /* position: relative; */
 }
 
-/* .unique-bg .unique-overlay{
-    background-color: #1e1d1ee6;
-        opacity: 0.95;
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-} */
+
 .unique {
-    /* position: absolute;
-        top: 0;
-        left: 0; */
     padding-top: 100px;
 }
 
@@ -563,7 +525,7 @@ button {
     background-repeat: repeat;
     width: 100%;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -713,8 +675,8 @@ button {
     background-image: url(image/vec3.jpg);
     background-position: bottom left;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
+    /* width: 100%;
+    height: 600px; */
 }
 
 .facilities {
@@ -729,15 +691,16 @@ button {
     display: flex;
     /* margin-left: 70px; */
     margin-top: 80px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 
 }
 
 .room .plays {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-flow: column wrap; */
     width: 250px;
 }
 
@@ -760,9 +723,10 @@ button {
     /* text-align: center; */
     /* font-size: 26px; */
     /* font-weight: bold; */
-    margin-left: 40px;
-    margin-top: 2px;
-    font-size: 15px;
+    /* margin-left: 40px;
+    margin-top: 2px; */
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /* Footer section starting  */

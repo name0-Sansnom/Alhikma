@@ -354,23 +354,29 @@ html {
         color: rgb(27, 27, 27);
     }
 
-    .founder {
+    /* .founder {
         margin-top: 350px;
-    }
+    } */
 
     .founder .founder-inner {
         margin-left: 35px;
         margin-bottom: -80px;
+        /* width: 100%; */
     }
 
     .founder .founder-inner .speech img {
         height: 300px;
-        width: 310px;
+        width: 320px;
     }
 
-    .activities {
+        .founder .founder-inner .speech p{
+            width: 100%;
+            font-size: 16px;
+        }
+
+    /* .activities {
         transform: translateY(-50px);
-    }
+    } */
 
     .activities .programs .care {
         width: 300px;
@@ -395,61 +401,72 @@ html {
         border-radius: 10px;
     }
 
-    .ours {
-        margin-top: -30px;
-    }
+    /* .ours {
+        margin-top: -140px;
+    } */
 
-    .ours .inner {
+    /* .ours .inner {
         display: flex;
         flex-flow: column wrap;
-        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 5px;
         margin-left: 10px;
         width: 50%;
-        /* overflow-x: hidden !important; */
-    }
-
-    /* .ours .inner .left{
         overflow-x: hidden !important;
     } */
-    .ours .inner .left h2 {
+
+    /* .ours .inner .left{
+        height: 35%;
+    } */
+    .ours h2 {
         font-size: 20px;
-        width: 45%;
+        width: 85%;
+        margin-left: 25px;
+        margin-top: -15px;
     }
 
-    .ours .inner .left p {
-        font-size: 16px;
+    .ours p {
+        font-size: 14px;
+        width: 85%;
+            margin-left: 25px;
+            margin-top: 10px;
+    }
+
+    .ours .left{
+        margin-top: -40px;
+        margin-left: -120px;
     }
 
     .ours .inner .left .svg-text {
         margin-top: 10px;
-        font-size: 15px;
-        width: 40%;
+        font-size: 14px;
+        width: 90%;
     }
 
     .ours .inner .left .svg-text i {
         font-size: 28px;
-        margin-left: -12px;
+        /* margin-left: -12px; */
     }
 
     .ours .inner .right {
-        margin-top: -26rem;
+        margin-top: 120px;
         /* overflow-x: hidden !important; */
     }
 
     .ours .inner .right img {
-        width: 180px;
-        height: 180px;
-        margin-left: 10px;
+        width: 160px;
+        height: 160px;
+        transform: translateX(-50px);
     }
 
-    .unique-bg {
+    /* .unique-bg {
         height: auto;
     }
 
     .unique {
         margin-top: -50px;
-    }
+    } */
 
     .unique h1 {
         margin-top: -70px;
@@ -485,44 +502,47 @@ html {
         left: -20px;
     }
 
-    .facility-bg {
+    /* .facility-bg {
         height: 500px;
         background: none;
-    }
+    } */
 
     .facilities {
-        margin-top: 2px;
+        margin-top: 8px;
 
     }
 
     .room {
-        flex: 200px;
-        margin-left: -62px;
-        margin-top: -5px;
+        /* flex: 200px;
+        margin-left: -62px; */
+        margin-top: 5px;
     }
 
     .room .plays {
-        width: 100px;
-        margin-left: 30px;
-        margin-top: 30px;
+
+        width: 150px;
+        /* margin-left: 30px; */
+        /* margin-top: 30px; */
         /* justify-content: space-between; */
     }
 
     .room .plays img {
-        height: auto;
-        width: 100px;
+        height: 100px;
+        width: 110px;
+        margin-top: 15px;
     }
 
     .room .plays h3 {
         font-size: 14px;
         font-weight: 100;
         margin-top: 10px;
+        margin-left: -30px;
+        /* text-align: center; */
     }
 
     .room .plays p {
         font-size: 12px;
         margin-top: 5px;
-        margin-left: 10px;
     }
 
     .footer .upper {
