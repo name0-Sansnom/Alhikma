@@ -190,7 +190,7 @@ ul li a:hover {
 /* below slider first section starting */
 .section-one {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     height: 200px;
     background-color: #8123ad;
@@ -201,6 +201,7 @@ ul li a:hover {
 .section-one img {
     height: 110px;
     width: 110px;
+    border-radius: 3.5px;
 }
 
 
@@ -235,41 +236,69 @@ h2 {
 
 
 .vision {
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 12%;
+    /* margin-left: 50px; */
+    margin-top: 100px;
     text-align: center;
-
+justify-content: space-around;
 }
-
+.five{
+    width: 30%;
+}
 
 .five img {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
 }
 
-.vision-box .vision .five h1,
-button {
-    margin-right: 40px;
-    margin-top: 15px;
-
-
-}
+/* .five #value_png {
+    height: 110px;
+    width: 110px;
+    margin-top: 50px;
+} */
 
 .five p {
+    padding: 30px;
     font-size: 18px;
-    margin-right: 40px;
-    margin-top: 15px;
-    font-weight: 300;
 }
 
-.five button {
-    background-color: #7E30A3;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 5px;
+
+.v_button {
+    padding: 15px;
+    border: none;
     border-radius: 5px;
+    text-transform: uppercase;
+    color: #7E30A3;
+    transition: all 1000ms;
+    font-size: 10px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #7E30A3;
+}
+
+.v_button:hover {
+    color: #fff;
+    transform: scale(1.1);
+    outline: 2px solid #7E30A3;
+    box-shadow: 4px 5px 17px -4px #7E30A3;
+}
+
+.v_button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #7E30A3;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 900ms;
+}
+
+.v_button:hover::before {
+    width: 250%;
 }
 
 /* A word from our founder style in action lol  */
@@ -292,13 +321,13 @@ button {
 }
 
 .founder .founder-inner .speech img {
-    height: 500px;
-    width: 48%;
+    height: 530px;
+    width: 46%;
     border-radius: 15px;
 }
 
 .founder .founder-inner .speech p {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 40%;
     height: 407px;
     text-align: center;
@@ -367,7 +396,7 @@ button {
     /* position: relative; */
 }
 
-.overlay {
+.overlays {
     background-color: #8123adc8;
     opacity: 0.95;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
@@ -839,7 +868,7 @@ button {
 /* about us styling starting  */
 
 .aboutBanner {
-    height: 30rem;
+    height: 35rem;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
     background-repeat: no-repeat;
@@ -852,10 +881,10 @@ button {
     font-weight: bold;
     font-size: 70px;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    top: 8%;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 2; */
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -864,6 +893,7 @@ button {
 .belowText {
     text-align: center;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .belowText #belowLine {
@@ -884,11 +914,18 @@ button {
     margin-right: 10%;
     margin-top: 2%;
 }
+.statistics p{
+    font-size: 22px;
+}
 
 .section2 {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 30px;
+}
+
+.section2 p{
+    font-size: 20px;
 }
 
 .mission {
@@ -933,46 +970,49 @@ button {
 
 .section3 p {
     text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
 
 }
 
 .coreValues {
-    width: 60%;
+    width: 50%;
     height: 490px;
-    background-image: url('image/CORE-VALUES-V11-2048x1366.jpg');
+    background-image: url('image/core values1.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 20px;
 }
 
-.section4,
-.section6 {
-    margin-top: 100px;
+.section4{
+    margin-top: 150px;
+    width: 90%;
+    margin-left: 100px;
+    font-size: 20px;
 }
 
-.section5 {
+/* .section5 {
     margin-top: 150px;
-}
+} */
 
 .values {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
-    margin-top: 5%;
+    justify-content: center;
 }
 
 #icon {
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 30px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 50px;
 
 }
 
 iconify-icon {
-    font-size: 60px;
+    font-size: 100px;
     color: rgb(126, 48, 163);
     text-shadow: 2px 2px 4px #000000;
 }
@@ -983,14 +1023,18 @@ iconify-icon {
 
 .section5 p {
     text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .subject {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    margin: auto;
+    width: 70%;
 }
 
 #subjectCard {
@@ -999,15 +1043,21 @@ iconify-icon {
     margin-top: 5%;
 }
 
+.section6 {
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
 .ourTeam {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+
 #team {
     width: 20%;
-    height: 400px;
+    height: 310px;
     box-shadow: 5px 5px 5px rgb(128, 128, 128);
     margin-top: 2%;
     margin-right: 2%;
@@ -1015,23 +1065,24 @@ iconify-icon {
     border-radius: 10px;
 }
 
+
+
 #team img {
     width: 100%;
-    height: 300px;
-    border-radius: 10px;
+    height: 230px;
+    border-radius: 10px 10px 0 0;
 }
 
 #team h3 {
     color: rgb(126, 48, 163);
     text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 #team p {
     text-align: center;
-}
-
-.section6 {
-    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 /* contact Us page styling starting */

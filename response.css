@@ -297,16 +297,19 @@ html {
     }
 
     .section-one {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        /* flex: 200px; */
-        /* padding-left: 50px; */
+        flex: 200px; */
+        padding-left: 7px;
+        justify-content: space-between;
+        height: 80px;
 
     }
 
     .section-one .cart {
-        margin-left: 40px;
-        width: 105px;
+        /* margin-left: 5px; */
+        width: 100px;
+        margin-top: -20px;
     }
 
     .section-one h2 {
@@ -316,29 +319,29 @@ html {
     }
 
     .section-one img {
-        height: 60px;
-        width: 70px;
+        height: 55px;
+        width: 65px;
     }
 
     .hikmah {
-        margin-left: 60px;
+        margin-left: 30px;
+        width: 90%;
     }
 
     .hikmah p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 100;
-        /* width: 90%;
-            margin-left: 20px;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 280px; */
-        /* margin-inline-end: 10px; */
     }
 
     .vision {
-        margin-left: -20px;
+        margin-top: 30px;
 
     }
+
+        .five {
+            width: 100%;
+            margin: auto;
+        }
 
     .vision-box .vision .five h1 {
         margin-top: -10px;
@@ -353,10 +356,15 @@ html {
     .vision-box .vision .five p {
         color: rgb(27, 27, 27);
     }
+    .v_button {
+    margin-left: -10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
 
-    /* .founder {
-        margin-top: 350px;
-    } */
+    .founder {
+        margin-top: 50px;
+    }
 
     .founder .founder-inner {
         margin-left: 35px;
@@ -373,10 +381,6 @@ html {
             width: 100%;
             font-size: 16px;
         }
-
-    /* .activities {
-        transform: translateY(-50px);
-    } */
 
     .activities .programs .care {
         width: 300px;
@@ -401,24 +405,6 @@ html {
         border-radius: 10px;
     }
 
-    /* .ours {
-        margin-top: -140px;
-    } */
-                        
-    /* .ours .inner {
-        display: flex;
-        flex-flow: column wrap;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 5px;
-        margin-left: 10px;
-        width: 50%;
-        overflow-x: hidden !important;
-    } */
-
-    /* .ours .inner .left{
-        height: 35%;
-    } */
     .ours h2 {
         font-size: 20px;
         width: 85%;
@@ -460,14 +446,9 @@ html {
         transform: translateX(-50px);
     }
 
-    /* .unique-bg {
-        height: auto;
+    .unique-bg{
+        height: 100%;
     }
-
-    .unique {
-        margin-top: -50px;
-    } */
-
     .unique h1 {
         margin-top: -70px;
     }
@@ -478,20 +459,21 @@ html {
 
     .mess .good {
         width: 280px;
-        height: 340px;
+        height: 300px;
     }
 
     .mess .good img {
         width: 100%;
-        height: 180px;
+        height: 160px;
     }
 
     .mess .good p {
         font-size: 14px;
+        margin-left: 5px;
     }
 
     .mess .good h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .wrapper {
@@ -502,10 +484,6 @@ html {
         left: -20px;
     }
 
-    /* .facility-bg {
-        height: 500px;
-        background: none;
-    } */
 
     .facilities {
         margin-top: 8px;
@@ -521,9 +499,6 @@ html {
     .room .plays {
 
         width: 150px;
-        /* margin-left: 30px; */
-        /* margin-top: 30px; */
-        /* justify-content: space-between; */
     }
 
     .room .plays img {
@@ -585,44 +560,63 @@ html {
     .belowText #belowLine {
         background-color: #7e30a3;
         height: 0.2rem;
-        width: 4.5rem;
-        margin-left: -150%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 5.5rem;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .belowText{
+        font-size: 16px;
+    }
+    .statistics{
+        width: 92%;
+        margin: auto;
     }
 
     .statistics .num {
-        font-size: 22px;
+        font-size: 18px;
     }
 
-    .section2 {
-        display: none;
+    .statistics p{
+        font-size: 13px;
     }
 
+    .section2 p{
+        font-size: 16px;
+    }
     .mission {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
     }
 
-    .mission .missionImage {
+    .section2 .mission .missionImage {
         width: 100%;
         height: 200px;
     }
 
     .section2 .mission .history {
         width: 100%;
+        margin-left: -5px;
     }
 
+    .section3 p, .section4 p, .section5 p{
+        font-size: 16px;
+    }
 
     .section3 .coreValues {
         width: 80%;
         height: 200px;
         margin-left: 20px;
+        /* padding-bottom: 80px; */
     }
 
-    .section4 .values {
-        margin-left: 68px;
+    .section4{
+        margin: auto;
+    }
+    .section4 h1{
+
+        font-size: 22px;
+        margin-top: 50px ;
     }
 
     .section4 #icon {
@@ -633,6 +627,9 @@ html {
         display: none;
     }
 
+    .section5 h1{
+        margin-top: -80px;
+    }
     #subjectCard {
         height: 100px;
         width: 100px;
@@ -640,25 +637,25 @@ html {
     }
 
     #subjectCard img {
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
     }
 
     #subjectCard p {
-        text-align: center;
+        /* text-align: center; */
         font-size: 10px;
+        margin: auto;
     }
-
 
     #team {
 
-        width: 100px;
-        height: 150px;
+        width: 40%;
+        height: 160px;
         margin-top: 20px;
     }
 
     #team img {
-        width: 100px;
+        width: 100%;
         height: 120px;
     }
 
@@ -667,7 +664,7 @@ html {
     }
 
     #team p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     /* .programs phone responsiveness */
