@@ -4,7 +4,7 @@
         overflow-x: hidden;
     }
 
-    .menu-trigger {
+    /* .menu-trigger {
         display: block;
     }
 
@@ -47,8 +47,104 @@
 
     .top {
         display: none;
-    }
+    } */
 
+         nav ul {
+             margin-right: 0px;
+             float: left;
+         }
+    
+         nav .logo {
+             padding-left: 10px;
+             width: 100%;
+         }
+         
+         nav .logo img{
+             padding-right: 20px;
+         }
+    
+         .show+a,
+         ul {
+             display: none;
+         }
+    
+         nav ul li,
+         nav ul ul li {
+             display: block;
+             width: 100%;
+             color: #fff;
+         }
+
+         nav ul li a {
+            display: block;
+            text-align: left;
+            color: #fff;
+            background: #7e30a3;
+            }
+    
+         .show {
+             display: block;
+             color: #fff;
+             background-color: #7E30A3;
+             font-size: 18px;
+             text-transform: uppercase;
+             padding: 0 20px;
+             line-height: 70px;
+             font-weight: 600;
+             cursor: pointer;
+         }
+    
+         .show:hover {
+             color: #fff;
+         }
+    
+         .icon {
+             display: block;
+             color: #7E30A3;
+             position: absolute;
+             top: 0;
+             right: 40px;
+             line-height: 70px;
+             cursor: pointer;
+             font-size: 25px;
+         }
+    
+         nav ul ul {
+             top: 70px;
+             border-top: 0px;
+             float: none;
+             position: static;
+             display: none;
+             opacity: 1;
+             visibility: visible;
+         }
+    
+         nav ul ul a {
+             padding-left: 40px;
+         }
+/*     
+         nav ul ul ul a {
+             padding-left: 80px;
+         }
+    
+         nav ul ul ul li {
+             position: static;
+         } */
+    
+         [id^=btn]:checked+ul {
+             display: block;
+             background-color: #fff;
+         }
+    
+         nav ul ul li {
+             border-bottom: 0px;
+         }
+
+         .sub-links li a {
+    background-color: #783896c6;
+    color: #fff;
+}
+    
     /* about_us tablet mode responsiveness styling starting */
     .belowText #belowLine {
         background-color: #7e30a3;
@@ -216,31 +312,22 @@
 
 @media screen and (min-width:320px) and (max-width: 460px) {
 
-    /* 
-    
-html {
-        overflow-x: hidden;
-    }
-
-    body {
-        position: relative;
-        overflow-x: hidden;
-    } */
     h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .menu-top {
         position: relative;
     }
 
-    .nav-block {
+    nav {
         position: absolute;
-        top: 5px;
-        z-index: 99;
-    }
+        top: 0;
+        z-index: 2;
+        width: 100%;
+   }
 
-    .logo img {
+ /*     .logo img {
         margin-left: 0.1em;
 
     }
@@ -260,23 +347,20 @@ html {
 
     .menu {
         margin-top: -10px;
-        /* margin-left: 100px; */
-        /* padding-bottom: 20px; */
+ 
     }
 
     .menu-trigger {
-        /* margin-left: -250px; */
         padding-bottom: 8px;
-        /* margin-top: -5px; */
     }
 
     .menu-trigger i {
         font-size: 30px;
         margin-top: 5px;
-    }
+    } */
 
     .swiper-slide img {
-        height: auto;
+        height: 25rem;
     }
 
     .swiper-slide .text h1 {
@@ -288,8 +372,6 @@ html {
     .swiper-slide .text span {
         font-size: 15px;
         margin-left: -100px;
-        /* transform: translateX(-60px); */
-        /* letter-spacing: 0.5px; */
     }
 
     .top {
@@ -297,17 +379,13 @@ html {
     }
 
     .section-one {
-        /* display: flex;
-        flex-wrap: wrap;
-        flex: 200px; */
-        padding-left: 7px;
+        padding-left: 12px;
         justify-content: space-between;
         height: 80px;
 
     }
 
     .section-one .cart {
-        /* margin-left: 5px; */
         width: 100px;
         margin-top: -20px;
     }
@@ -315,12 +393,11 @@ html {
     .section-one h2 {
         font-size: 14px;
         padding-left: 10px;
-        /* color: red; */
     }
 
     .section-one img {
-        height: 55px;
-        width: 65px;
+        height: 50px;
+        width: 60px;
     }
 
     .hikmah {
@@ -557,6 +634,15 @@ html {
     }
 
     /* about_us phone mode responsiveness styling starting */
+    .aboutBanner{
+        height: 22rem;
+    }
+
+    .about h2{
+        top: 5%;
+        left: -10%;
+        font-size: 32px;
+    }
     .belowText #belowLine {
         background-color: #7e30a3;
         height: 0.2rem;

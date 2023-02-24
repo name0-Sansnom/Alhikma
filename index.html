@@ -12,6 +12,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- bootstrapcdn for dropdown option and icone  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- slick-carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -49,8 +51,9 @@
     </div>
 
     <!-- for placing navbar oon top of the slider in responsive mode  -->
-    <div class="menu-top">
-        <!-- Responsive Header -->
+    <!--  and Responsive Header -->
+
+    <!-- <div class="menu-top">
         <section class="nav-block">
             <header>
                 <div class="logo">
@@ -74,8 +77,44 @@
                 </div>
             </header>
         </section>
-        <!-- navbar ends here -->
-    </div>
+    </div> -->
+
+   <div class="menu-top">
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/Logo-300x254.jpg" alt="">
+            </a>
+            <h1>Al-Hikma</h1>
+        </div>
+    
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+    
+        <input type="checkbox" id="btn" />
+    
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Program.html">Programs</a></li>
+            <li><a href="Event.html">Event</a></li>
+    
+            <li>
+                <label for="btn-1" class="show">Features+</label>
+                <a href="#">Features</a>
+                <input type="checkbox" id="btn-1" />
+                <ul class="sub-links">
+                    <li><a href="doc/try.pdf" download>Form</a></li>
+                    <li><a href="#">Portal</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   </div>
+    <!-- navbar ends here -->
+
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -551,7 +590,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Responsive header js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
     <!-- slick slider for testimonials  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
