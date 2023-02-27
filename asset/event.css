@@ -164,15 +164,16 @@ input {
 
 /* events and gallery page style start */
 .events_hero {
-    height: 30rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../asset/image/IMG_8193.jpg);
+    height: 35rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../asset/images/IMG_13.jpg);
     background-size: cover;
     background-position: center;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .try {
     font-size: 36px;
+    font-weight: 600;
     position: absolute;
     top: 10%;
     left: 45%;

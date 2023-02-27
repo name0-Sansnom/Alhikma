@@ -856,6 +856,17 @@
         margin-top: 20px;
     }
 
+    /* events responsiveness style start  */
+
+    .events_hero {
+        height: 25rem;
+    }
+
+    .try {
+       top: 15rem;
+       left: 25%; 
+    }
+
     .re-events {
         width: 100%;
         flex-flow: column wrap;
