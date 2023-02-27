@@ -86,17 +86,32 @@
     }
 
     .slider-text h1 {
-        font-size: 5px; 
+       
         padding-top: 40px; 
         /* padding-right: 30px; */
        
     }
 
-   .text {
-    font-size: small;
-    /* padding-top: 5px; */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    .pp {
+        font-size: 20px;
+        align-content: center;
+        margin-right:7rem;
+
+
+    }
+
+   .text{
+    margin-left: 6px;
+    margin-right: 6px;
+   }
+
+   .hh {
+    width: 100%;
+    height: 100%;
+    padding-left: 0.3px;
+    padding-right: 0.3px;
+    font-size: xx-small;
+    
 
    }
 
@@ -118,59 +133,64 @@
 
    .grid {
     margin-top: 2px;
-  
+    display: flex;
+    flex-wrap: wrap;
    } 
 
-   img {
-    height: 200px;
-    width: 200px;
-   }
-
-   .programs .program-content{
-    height: 150px;
-   
+   .grid .program {
+    display: flex;
     
    }
 
-    .swiper-slide img {
-        height: auto;
-    }
+   .grid .program {
+    width: 60%;
 
-    .swiper-slide .text {
-        font-size: 10px;
-        left: 5%;
-    }
+   }
 
-    .top {
-        display: none;
-    }
+   .grid .program img {
+    height: 10rem;
+    width: 100%;
+   }
 
-    .nameless {
-        height: auto;
-    }
+  .program-content  {
+    height: 5rem;
+    width: 5rem;
+    font-size: 5px;
+    padding-top: 10px;
+    
+  }
 
-    .nameless .boxes {
-        margin-bottom: 40px;
-        font-size: 6px;
-    }
+  .p {
+    font-size: 10rem;
+  }
 
-    .nameless .boxes img {
-        height: 60px;
-        width: 70px;
-    }
+  .grid .program .program-content h2 {
+    padding: 0;
+  }
 
-    .founder {
-        margin-left: 40px;
-    }
+ .grid .program .program-content > p {
+    font-size: 10px;
+
+    /* overflow: scroll; */
+    
+  }
+
+  .minigallery {
+    display: none;
+  }
+
+.program-content {
+    align-content: center;
+}
+
+   
 
     .program {
         margin-top: 40px;
         
     }
 
-    .wrapper {
-        margin-left: 20px;
-    }
+ 
 
 
 }
