@@ -230,7 +230,7 @@ input {
 
 
 
-h2 {
+.section-one {
     color: white;
     padding-right: 100px;
 }
@@ -408,7 +408,7 @@ h2 {
 /* our school section sttyling start */
 .ours {
     margin-top: 20px;
-    background-image: linear-gradient(rgba(130, 36, 174, 0.784), rgba(130, 36, 174, 0.784)), url(image/geometry-bg.jpg);
+    background-image: linear-gradient(rgba(130, 36, 174, 0.784), rgba(130, 36, 174, 0.784)), url(../asset/image/geometry-bg.jpg);
     background-position: center center;
     background-repeat: repeat;
     width: 100%;
@@ -437,6 +437,7 @@ h2 {
 }
 
 .ours h2 {
+    color: white;
     width: 35%;
     margin-left: 100px;
     font-size: 32px;
@@ -486,7 +487,7 @@ h2 {
 
 /* Our .uniqueness section style from mariam */
 .unique-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(image/vec4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../asset/image/vec4.jpg);
     background-position: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -548,7 +549,7 @@ h2 {
 
 /* testimonial section starting */
 .wrapper-bg {
-    background-image: url(IMAGE/vec3.jpg);
+    background-image: url(../asset/image/vec3.jpg);
     background-position: top right;
     background-repeat: repeat;
     width: 100%;
@@ -700,7 +701,7 @@ h2 {
 
 /* our facilities style from our mariam starting */
 .facility-bg {
-    background-image: url(image/vec3.jpg);
+    background-image: url(../asset/image/vec3.jpg);
     background-position: bottom left;
     background-repeat: no-repeat;
     /* width: 100%;
@@ -754,7 +755,7 @@ h2 {
 /* Footer section starting  */
 
 .footer {
-    background-image: url(image/footer-pattern.png);
+    background-image: url(../asset/image/footer-pattern.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -851,7 +852,7 @@ h2 {
 .aboutBanner {
     height: 35rem;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../asset/image/14.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -929,7 +930,7 @@ h2 {
 .missionImage {
     width: 50%;
     height: 400px;
-    background-image: url('image/IMG_0535.jpg');
+    background-image: url('../asset/image/IMG_0535.jpg');
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -958,7 +959,7 @@ h2 {
 .coreValues {
     width: 50%;
     height: 490px;
-    background-image: url('image/core values1.png');
+    background-image: url('../asset/image/core values1.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -1061,7 +1062,7 @@ iconify-icon {
 /* contact Us page styling starting */
 .contact {
     height: 30rem;
-    background: linear-gradient(10deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/IMG_4643.jpg");
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/image/IMG_4643.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -1198,7 +1199,7 @@ form>input {
 .slider-box .allow {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/heroimage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/image/heroimage.jpg");
     padding-top: 100px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1306,266 +1307,4 @@ form>input {
 .minigallery img {
     height: 13rem;
     width: 22rem;
-}
-
-/* events and gallery page style start */
-.events_hero {
-    height: 30rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25px 20px;
-}
-
-.container .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.container .box-container .box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    display: none;
-}
-
-.container .box-container .box:nth-child(1),
-.container .box-container .box:nth-child(2),
-.container .box-container .box:nth-child(3),
-.container .box-container .box:nth-child(4) {
-    display: inline-block;
-}
-
-.container .box-container .box .image {
-    margin-bottom: 20px;
-    overflow: hidden;
-    height: 250px;
-    border-radius: 5px;
-}
-
-.container .box-container .box .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.container .box-container .box:hover .image img {
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-
-#load-more {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 13px 30px;
-    border: 1px solid #334;
-    color: #334;
-    font-size: 18px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-#load-more:hover {
-    background-color: crimson;
-    border-color: crimson;
-    color: #fff;
-    font-size: 20px;
-}
-
-#load-less {
-    margin-top: 20px;
-    display: none;
-    padding: 13px 30px;
-    border: 1px solid #334;
-    color: #334;
-    font-size: 16px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-#load-less:hover {
-    background-color: crimson;
-    border-color: crimson;
-    color: #fff;
-}
-
-/* Upcoming event style start*/
-.re-events {
-    width: 80%;
-    margin: auto;
-    background-image: linear-gradient(rgb(176, 60, 197, 8.78), rgb(176, 60, 197, 0.6)), url('image/vec1.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-/* Styling the left floating section */
-.re-events .leftBox {
-    margin-top: 100px;
-    width: 45%;
-}
-
-/* Styling the background of
-            left floating section */
-.re-events .leftBox .contant {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    transition: .5s;
-}
-
-/* Styling the hover effect 
-            of left floating section */
-.re-events .leftBox .contant:hover {
-    background: #e91e63;
-}
-
-/* Styling the header of left
-            floating section */
-.re-events .leftBox .contant h1 {
-
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* Styling the paragraph of
-            left floating section */
-.re-events .leftBox .contant p {
-    margin: 15px 0 0;
-    padding: 0;
-    font-size: 20px;
-}
-
-/* Styling the three events section */
-.re-events .events {
-    margin-top: 50px;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-}
-
-/* Styling the links of
-        the events section */
-.re-events .events ul {
-    margin: 0;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-/* Styling the lists of the event section */
-.re-events .events ul li {
-    list-style: none;
-    background: #fff;
-    box-sizing: border-box;
-    margin: 15px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Styling the time class of events section */
-.re-events .events ul li .time {
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: auto;
-    text-align: center;
-    transition: .5s;
-
-}
-
-/* Styling the hover effect
-            of events section */
-.re-events .events ul li:hover .time {
-    background: #e91e63;
-}
-
-/* Styling the header of time
-            class of events section */
-.re-events .events ul li .time h2 {
-    color: #fff;
-    font-size: 56px;
-    line-height: 30px;
-}
-
-/* Styling the texts of time
-        class of events section */
-.re-events .events ul li .time h2 span {
-    font-size: 28px;
-    margin: -10px;
-}
-
-/* Styling the details
-        class of events section */
-.re-events .events ul li .details {
-    padding: 20px;
-    background: #fff;
-    box-sizing: border-box;
-    width: 70%;
-}
-
-/* Styling the header of the
-        details class of events section */
-.re-events .events ul li .details h3 {
-    font-size: 22px;
-    color: #7e30a3;
-}
-
-/* Styling the lists of details
-        class of events section */
-.re-events .events ul li .details p {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-/* Styling the links of details
-        class of events section */
-.re-events .events ul li .details a {
-    display: none;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 1.5px solid #262626;
-    margin-top: 8px;
-    font-size: 18px;
-    transition: .5s;
-}
-
-/* Styling the details class's hover effect */
-.re-events .events ul li .details a:hover {
-    background: #e91e63;
-    color: #fff;
-    border-color: #e91e63;
-}
-
-/* Social media handles feeds section style start  */
-.iframe-box {
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.iframe-box h4 {
-    text-align: center;
-    font-size: 18px;
-    margin: 30px;
-    font-family: 'montserat', sans-serif;
-    color: #656565;
-}
-
-.iframe-box .frames {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 10px;
-
 }
