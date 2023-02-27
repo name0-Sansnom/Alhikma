@@ -830,9 +830,15 @@ input {
     margin-top: 30px;
 }
 
+/* .upper .social-second .icons-second a {
+    text-decoration: none;
+    
+} */
+
 .upper .social-second .icons-second i {
     font-size: 22px;
     margin-left: 20px;
+    color: white;
 }
 
 .footer hr {
