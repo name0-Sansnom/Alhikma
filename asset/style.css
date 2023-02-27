@@ -408,7 +408,7 @@ h2 {
 /* our school section sttyling start */
 .ours {
     margin-top: 20px;
-    background-image: linear-gradient(rgba(130, 36, 174, 0.784), rgba(130, 36, 174, 0.784)), url(asset/image/geometry-bg.jpg);
+    background-image: linear-gradient(rgba(130, 36, 174, 0.784), rgba(130, 36, 174, 0.784)), url(image/geometry-bg.jpg);
     background-position: center center;
     background-repeat: repeat;
     width: 100%;
@@ -486,7 +486,7 @@ h2 {
 
 /* Our .uniqueness section style from mariam */
 .unique-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(asset/image/vec4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(image/vec4.jpg);
     background-position: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -548,7 +548,7 @@ h2 {
 
 /* testimonial section starting */
 .wrapper-bg {
-    background-image: url(asset/image/vec3.jpg);
+    background-image: url(IMAGE/vec3.jpg);
     background-position: top right;
     background-repeat: repeat;
     width: 100%;
@@ -700,7 +700,7 @@ h2 {
 
 /* our facilities style from our mariam starting */
 .facility-bg {
-    background-image: url(asset/image/vec3.jpg);
+    background-image: url(image/vec3.jpg);
     background-position: bottom left;
     background-repeat: no-repeat;
     /* width: 100%;
@@ -754,7 +754,7 @@ h2 {
 /* Footer section starting  */
 
 .footer {
-    background-image: url(asset/image/footer-pattern.png);
+    background-image: url(image/footer-pattern.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -851,7 +851,7 @@ h2 {
 .aboutBanner {
     height: 35rem;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/image/14.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -929,7 +929,7 @@ h2 {
 .missionImage {
     width: 50%;
     height: 400px;
-    background-image: url('asset/image/IMG_0535.jpg');
+    background-image: url('image/IMG_0535.jpg');
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -958,7 +958,7 @@ h2 {
 .coreValues {
     width: 50%;
     height: 490px;
-    background-image: url('asset/image/core values1.png');
+    background-image: url('image/core values1.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -1061,7 +1061,7 @@ iconify-icon {
 /* contact Us page styling starting */
 .contact {
     height: 30rem;
-    background: linear-gradient(10deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/image/IMG_4643.jpg");
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/IMG_4643.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -1198,7 +1198,7 @@ form>input {
 .slider-box .allow {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/image/heroimage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/heroimage.jpg");
     padding-top: 100px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1311,7 +1311,7 @@ form>input {
 /* events and gallery page style start */
 .events_hero {
     height: 30rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/image/14.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/14.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1402,7 +1402,7 @@ form>input {
 .re-events {
     width: 80%;
     margin: auto;
-    background-image: linear-gradient(rgb(176, 60, 197, 8.78), rgb(176, 60, 197, 0.6)), url('asset/image/vec1.jpg');
+    background-image: linear-gradient(rgb(176, 60, 197, 8.78), rgb(176, 60, 197, 0.6)), url('image/vec1.jpg');
     background-size: cover;
     display: flex;
     justify-content: space-around;

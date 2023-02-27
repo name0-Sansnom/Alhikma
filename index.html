@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/response.css">
 
     <!-- Add this for font-awesome if you have not integrated it in your work -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -52,74 +52,46 @@
 
     <!-- for placing navbar oon top of the slider in responsive mode  -->
     <!--  and Responsive Header -->
+    <div class="menu-top">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="asset/image/Logo-300x254.jpg" alt="">
+                </a>
+            </div>
 
-    <!-- <div class="menu-top">
-        <section class="nav-block">
-            <header>
-                <div class="logo">
-                    <a href="#">
-                        <img src="image/Logo-300x254.jpg" alt="">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="program.html">Programs</a></li>
-                        <li><a href="Event.html">Event</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+
+            <input type="checkbox" id="btn" />
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Program.html">Programs</a></li>
+                <li><a href="Event.html">Event</a></li>
+
+                <li>
+                    <label for="btn-1" class="show">Features+</label>
+                    <a href="#">Features</a>
+                    <input type="checkbox" id="btn-1" />
+                    <ul class="sub-links">
+                        <li><a href="doc/try.pdf" download>Form</a></li>
+                        <li><a href="#">Portal</a></li>
                     </ul>
-                </nav>
-
-                <div class="menu">
-
-                    <a href="#" class="menu-trigger"><i class="fa-solid fa-bars"></i></a>
-                </div>
-            </header>
-        </section>
-    </div> -->
-
-   <div class="menu-top">
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="image/Logo-300x254.jpg" alt="">
-            </a>
-            <h1>Al-Hikma</h1>
-        </div>
-    
-        <label for="btn" class="icon">
-            <span class="fa fa-bars"></span>
-        </label>
-    
-        <input type="checkbox" id="btn" />
-    
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Program.html">Programs</a></li>
-            <li><a href="Event.html">Event</a></li>
-    
-            <li>
-                <label for="btn-1" class="show">Features+</label>
-                <a href="#">Features</a>
-                <input type="checkbox" id="btn-1" />
-                <ul class="sub-links">
-                    <li><a href="doc/try.pdf" download>Form</a></li>
-                    <li><a href="#">Portal</a></li>
-                </ul>
-            </li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-   </div>
+                </li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- navbar ends here -->
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="image/IMG_8308.jpg" alt="">
+                <img src="asset/image/IMG_8308.jpg" alt="">
                 <div class="text">
                     <h1 style="color: #fff;">Al-Hikmah Islamic Montessori School</h1>
                     <span>Nurturing Minds, Soul & Body</span>
@@ -128,7 +100,7 @@
             </div>
 
             <div class="swiper-slide">
-                <img src="image/IMG_7776.jpg" alt="">
+                <img src="asset/image/IMG_7776.jpg" alt="">
                 <div class="text">
                     <h1 style="color: #fff;">Al-Hikmah Islamic Montessori School</h1>
                     <span>Nurturing Minds, Soul & Body</span>
@@ -136,7 +108,7 @@
 
             </div>
             <div class="swiper-slide">
-                <img src="image/alhikma20.jpg" alt="">
+                <img src="asset/image/alhikma20.jpg" alt="">
                 <div class="text">
                     <h1 style="color: #fff;">Al-Hikmah Islamic Montessori School</h1>
                     <span>Nurturing Minds, Soul & Body</span>
@@ -144,7 +116,7 @@
 
             </div>
             <div class="swiper-slide">
-                <img src="image/IMG_8114.jpg"
+                <img src="asset/image/IMG_8114.jpg"
                     style="background-image: linear gradient(rgb(0,0,0,0.75) rgb(0,0,0,0.75));" alt="">
                 <div class="text">
                     <h1 style="color: #fff;">Al-Hikmah Islamic Montessori School</h1>
@@ -162,16 +134,16 @@
 
     <div class="section-one">
 
-        <div class="cart"><img src="image/Baby 04.jpg">
+        <div class="cart"><img src="asset/image/Baby 04.jpg">
             <h2>Daycare</h2>
         </div>
-        <div class="cart"><img src="image/Playground 01.jpg">
+        <div class="cart"><img src="asset/image/Playground 01.jpg">
             <h2>Playschool</h2>
         </div>
-        <div class="cart"><img src="image/pre school.jpg">
+        <div class="cart"><img src="asset/image/pre school.jpg">
             <h2>Preschool</h2>
         </div>
-        <div class="cart"><img src="image/Abc_Blocks_clip_art_hight.png">
+        <div class="cart"><img src="asset/image/Abc_Blocks_clip_art_hight.png">
             <h2>Primary</h2>
         </div>
 
@@ -190,7 +162,7 @@
     </div>
 
     <div class="vision">
-        <div class="five"><img src="image/vision.png">
+        <div class="five"><img src="asset/image/vision.png">
             <h1>Our Vision</h1>
             <p>Our vision is to nuture each child in their spiritual, moral,
                 intellectual,social and emotional growth in the light of the
@@ -199,7 +171,7 @@
         </div>
 
 
-        <div class="five"><img src="image/mission.png">
+        <div class="five"><img src="asset/image/mission.png">
             <h1>Our Mission</h1>
             <p>To provide the best intellectual,social,physical, and spiritual child
                 development programs on the market and to deliver them in the
@@ -207,7 +179,7 @@
             <button class="v_button" <a href="About.html">Read More</a></button>
         </div>
 
-        <div class="five" id="mission"><img id="value_png" src="image/values.jpg">
+        <div class="five" id="mission"><img id="value_png" src="asset/image/values.jpg">
             <h1>Our Mandate</h1>
             <p>We stimulate inquiring minds and spark enthusiasm for discovery and
                 exploration. Focus on all aspect of student development: the acdemic,
@@ -223,7 +195,7 @@
         <div class="founder-inner">
             <h1>A Word From Our Founder</h1>
             <div class="speech">
-                <img src="image/ceo1.jfif" alt="">
+                <img src="asset/image/ceo1.jfif" alt="">
 
                 <p><i>“ Dear Students, Parents, and Teachers,
 
@@ -259,29 +231,31 @@
     <div class="activities" style="margin-top: 100px;">
         <h1>Our Programs</h1>
         <div class="programs">
-            <div class="care"><img class="small" src="image/IMG_7766.jpg">
+            <div class="care"><img class="small" src="asset/image/IMG_7766.jpg">
                 <h1>Creche<br>
                     (18months-2years)<br></h1>
-                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's
-                    standard dummy text ever since the... </P>
+                <P>At Al-Hikmah Islamic Montessori,children are given the freedom
+                    to choose their own activities and work at their own pace. The environment
+                    is carefully designed to be... </P>
                 <button>Read more</button>
             </div>
-            <div class="care"><img class="small" src="image/IMG_7957.jpg">
+            <div class="care"><img class="small" src="asset/image/IMG_7957.jpg">
                 <h1>kindergarten<br>
                     (2years-3years)<br></h1>
-                <P>Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the...
+                <P>The goal of Kindergarten Montessori is to help children develop independence, self-confidence, and a
+                    love of learning.
+                    We provide
+                    a nurturing and stimulating ...
                 </P>
                 <button>Read more</button>
 
             </div>
-            <div class="care"><img class="small" src="image/IMG_8193.jpg">
+            <div class="care"><img class="small" src="asset/image/IMG_8193.jpg">
                 <h1>Grades<br>
-                    (6yea rs-10years)<br></h1>
-                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the... </P>
+                    (6years-10years)<br></h1>
+                <P>One of the key features of a Primary Montessori classroom is
+                    the use of self-correcting materials. These materials are
+                    designed to provide immediate feedback to the child,... </P>
                 <button>Read more</button>
             </div>
 
@@ -311,7 +285,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="image/classworks.webp" alt="">
+                <img src="asset/image/classworks.webp" alt="">
             </div>
         </div>
     </div>
@@ -328,20 +302,20 @@
         </div>
         <!-- <div class="uinque-overlay"></div> -->
         <div class="mess">
-            <div class="good"><img class="big" src="image/IMG_8456.jpg">
+            <div class="good"><img class="big" src="asset/image/IMG_8456.jpg">
                 <h1>Islamic & Secular Education</h1>
                 <P>We prepare your child to attain success in both worlds. We nourish our students with academic skills,
                     knowledge of the
                     Deen and essential life skills in a conducive learning environment..</P>
             </div>
-            <div class="good"><img class="big" src="image/IMG_7841.jpg">
+            <div class="good"><img class="big" src="asset/image/IMG_7841.jpg">
                 <h1>Montessori System</h1>
                 <P>Pursue excellence through a commitment to the continuum of the Montessori and Islamic programs, as
                     well other
                     accrediting educational programmes. A dynamic and progressive school with well-resourced and
                     innovative programmes</P>
             </div>
-            <div class="good"><img class="big" src="image/IMG_8106.jpg">
+            <div class="good"><img class="big" src="asset/image/IMG_8106.jpg">
                 <h1>Good Global Citizens</h1>
                 <P>We encourage our students to contribute to the community, embrace and respect diversity and change,
                     act with kindness
@@ -362,7 +336,7 @@
                 <!-- Carousel wrapper -->
                 <div>
                     <div class="card" style="background-color: #fff">
-                        <img src="image/abraham-george-0Ftgn7-a4dc-unsplash.jpg" alt="avatar"
+                        <img src="asset/image/abraham-george-0Ftgn7-a4dc-unsplash.jpg" alt="avatar"
                             style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
                         <h5 class="mb-3">Anna Deynah</h5>
                         <p
@@ -386,7 +360,7 @@
                 </div>
                 <div>
                     <div class="card" style="background-color: #fff">
-                        <img src="image/etty-fidele-nF8eo2nX374-unsplash.jpg" alt="avatar"
+                        <img src="asset/image/etty-fidele-nF8eo2nX374-unsplash.jpg" alt="avatar"
                             style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
                         <h5 class="mb-3">Anna Deynah</h5>
                         <p
@@ -409,31 +383,7 @@
                 </div>
                 <div>
                     <div class="card" style="background-color: #fff">
-                        <img src="image/kingsley-osei-abrah-fmuCylX5NKA-unsplash.jpg" alt="avatar"
-                            style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
-                        <h5 class="mb-3">Anna Deynah</h5>
-                        <p
-                            style="color: #0c0c0c; font-size: 20px; font-family: 'quicksand', cursive; font-weight: bold;">
-                            UX
-                            Designer</p>
-                        <p class="text-muted">
-                            <i class="fas fa-quote-left pe-2"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                            officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-                            <i class="fas fa-quote-left pe-2"></i>
-                        </p>
-                        <ul>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                            <li><i class="fas fa-star fa-sm"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="card" style="background-color: #fff">
-                        <img src="image/prince-akachi-4Yv84VgQkRM-unsplash.jpg" alt="avatar"
+                        <img src="asset/image/kingsley-osei-abrah-fmuCylX5NKA-unsplash.jpg" alt="avatar"
                             style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
                         <h5 class="mb-3">Anna Deynah</h5>
                         <p
@@ -457,7 +407,31 @@
                 </div>
                 <div>
                     <div class="card" style="background-color: #fff">
-                        <img src="image/jakayla-toney-SI6BaBMS_wo-unsplash.jpg" alt="avatar"
+                        <img src="asset/image/prince-akachi-4Yv84VgQkRM-unsplash.jpg" alt="avatar"
+                            style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p
+                            style="color: #0c0c0c; font-size: 20px; font-family: 'quicksand', cursive; font-weight: bold;">
+                            UX
+                            Designer</p>
+                        <p class="text-muted">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                            officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                            <i class="fas fa-quote-left pe-2"></i>
+                        </p>
+                        <ul>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="background-color: #fff">
+                        <img src="asset/image/jakayla-toney-SI6BaBMS_wo-unsplash.jpg" alt="avatar"
                             style="width: 115px; height: 113px;  margin-right: auto; margin-left: auto; padding-top: 3px;" />
                         <h5 class="mb-3">Anna Deynah</h5>
                         <p
@@ -492,24 +466,24 @@
 
         <div class="room">
             <div class="plays">
-                <img src="image/5.jpg">
+                <img src="asset/image/5.jpg">
                 <h3>Serene Envr.</h3>
                 <p> Lorem Ipsum is simply dummy text of the printing and typesetting</p>
             </div>
 
             <div class="plays">
-                <img src="image/7.jpg">
+                <img src="asset/image/7.jpg">
                 <h3>Playground</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
             </div>
 
-            <div class="plays"><img src="image/IMG_7752.jpg">
+            <div class="plays"><img src="asset/image/IMG_7752.jpg">
                 <h3>Library</h3>
                 <p> Lorem Ipsum is simply dummy text of the printing and typesetting</p>
             </div>
 
             <div class="plays">
-                <img src="image/IMG_8504.jpg">
+                <img src="asset/image/IMG_8504.jpg">
                 <h3>Classroom</h3>
                 <p> Lorem Ipsum is simply dummy text of the printing and typesetting</p>
             </div>
@@ -543,7 +517,7 @@
         </div>
         <div class="upper">
             <div class="logo-second">
-                <img src="image/footer.png" alt="">
+                <img src="asset/image/footer.png" alt="">
                 <h4>Bring your wards for the best circular <br> education
                     with professional teachers</h4>
             </div>
@@ -601,7 +575,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Initialize Swiper -->
-    <script src="java.js"></script>
+    <script src="asset/java.js"></script>
 
 </body>
 
