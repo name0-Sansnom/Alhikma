@@ -377,13 +377,13 @@ input {
 
 .care h1{
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 
 .care p {
-    font-size: 13px;
-    padding-left: 30px;
+    font-size: 16px;
+    padding-left: 10px;
 
 }
 
@@ -666,6 +666,7 @@ input {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding: 0 30px;
 }
 
 .wrapper .carousel .card img {
@@ -748,8 +749,9 @@ input {
 }
 
 .plays p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
 /* Footer section starting  */
@@ -1038,7 +1040,7 @@ iconify-icon {
 #team {
     width: 20%;
     height: 310px;
-    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    box-shadow: 5px 5px 5px rgb(232, 232, 232);
     margin-top: 2%;
     margin-right: 2%;
     margin-left: 2%;
