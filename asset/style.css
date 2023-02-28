@@ -206,9 +206,11 @@ input {
 
 .text {
     position: absolute;
-    top: 46%;
-    left: 30%;
+    top: 52%;
+    left: 31%;
     color: #fff;
+    font-size: 32px;
+    font-weight: 200;
     z-index: 2;
 }
 
