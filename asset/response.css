@@ -388,6 +388,7 @@
     .activities .programs .care {
         width: 300px;
         height: 360px;
+        border-radius: 20px 20px 0 0;
 
     }
 
@@ -397,14 +398,13 @@
     }
 
     .activities .programs .care p {
-        margin-top: 15px;
-        margin-right: 12px;
+        font-size: 14.5px;
     }
 
     .activities .programs .care button {
         width: 100%;
-        margin-left: 7px;
-        margin-top: 5px;
+        margin-left: 1px;
+        /* margin-top: 5px; */
         border-radius: 10px;
     }
 
@@ -422,6 +422,10 @@
             margin-top: 10px;
     }
 
+    .ours .inner {
+        flex-flow: column wrap;
+    }
+
     .ours .left{
         margin-top: -40px;
         margin-left: -120px;
@@ -430,7 +434,8 @@
     .ours .inner .left .svg-text {
         margin-top: 10px;
         font-size: 14px;
-        width: 90%;
+        width: 70%;
+        padding: 10px 15px;
     }
 
     .ours .inner .left .svg-text i {
@@ -444,7 +449,8 @@
     .ours .inner .right img {
         width: 160px;
         height: 160px;
-        transform: translateX(-50px);
+        /* margin-top: 20px; */
+        transform: translateX(-45px);
     }
 
     .unique-bg{
@@ -882,7 +888,7 @@
     }
 
     .re-events .leftBox .contant p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .re-events .events {

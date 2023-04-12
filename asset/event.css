@@ -231,16 +231,16 @@ input {
     margin-top: 20px;
     display: inline-block;
     padding: 13px 30px;
-    border: 1px solid #334;
-    color: #334;
+    border: 1px solid #9f64bac9;
+    color: #8b4ba8;
     font-size: 18px;
     background-color: #fff;
     cursor: pointer;
 }
 
 #load-more:hover {
-    background-color: crimson;
-    border-color: crimson;
+    background-color: #9549b7;
+    border-color: #9550b6;
     transition: 0.6s;
     color: #fff;
     font-size: 20px;
@@ -250,16 +250,16 @@ input {
     margin-top: 20px;
     display: none;
     padding: 13px 30px;
-    border: 1px solid #334;
-    color: #334;
+    border: 1px solid #773197e1;
+    color: #7E30A3;
     font-size: 16px;
     background-color: #fff;
     cursor: pointer;
 }
 
 #load-less:hover {
-    background-color: crimson;
-    border-color: crimson;
+    background-color: #934fb3da;
+    border-color: #9144b6;
     transition: 0.5s ease;
     color: #fff;
 }
@@ -433,4 +433,8 @@ input {
     margin-top: 50px;
     padding-bottom: 10px;
 
+}
+
+.iframe-box .frames .frame-right {
+    margin-top: 1rem;
 }

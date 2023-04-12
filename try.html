@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="lightbox.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <title>Document</title>
-    <style>
+    <!-- <style>
         .container {
             display: flex;
             justify-content: space-between;
@@ -54,13 +57,324 @@
             top: 2%;
             left: 3%;
         }
+    </style> -->
+
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        body {
+            background-color: #dc143c22;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .container .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* .container .box-container .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            display: none;
+        } */
+
+        .container .box-container:nth-child(1),
+        .container .box-container:nth-child(2),
+        .container .box-container:nth-child(3),
+        .container .box-container:nth-child(4) {
+            display: inline-block;
+        }
+
+        .container .box-container .image {
+            margin-bottom: 20px;
+            overflow: hidden;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        .container .box-container .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container .box-container .box:hover .image img {
+            transform: scale(1.1);
+        }
+
+        #load-more {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 13px 30px;
+            border: 1px solid #334;
+            color: #334;
+            font-size: 16px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        #load-more:hover {
+            background-color: crimson;
+            border-color: crimson;
+            color: #fff;
+        }
+
+        #load-less {
+            margin-top: 20px;
+            display: none;
+            padding: 13px 30px;
+            border: 1px solid #334;
+            color: #334;
+            font-size: 16px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        #load-less:hover {
+            background-color: crimson;
+            border-color: crimson;
+            color: #fff;
+        }
+
+        @media (max-width:450px) {
+
+            .container .heading {
+                font-size: 25px;
+            }
+
+            .container .box-container {
+                grid-template-columns: 1fr;
+            }
+
+            .container .box-container .box .image {
+                height: 200px;
+            }
+
+            .container .box-container .box .content p {
+                font-size: 12px;
+            }
+
+            .container .box-container .box .content .icons span {
+                font-size: 12px;
+            }
+
+        }
+    </style> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        nav {
+            background: #222;
+        }
+
+        nav:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        nav .logo {
+            float: left;
+            color: white;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 70px;
+            padding-left: 60px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 40px;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li {
+            float: left;
+            display: inline-block;
+            background: #222;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            line-height: 70px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: crimson;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 90px;
+            opacity: 0;
+            visibility: hidden;
+            transition: top .3s;
+        }
+
+        nav ul li:hover>ul {
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        nav ul ul li {
+            position: relative;
+            margin: 0px;
+            width: 150px;
+            float: none;
+            display: list-item;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul ul li a {
+            line-height: 50px;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 150px;
+        }
+
+        .show,
+        .icon,
+        input {
+            display: none;
+        }
+
+        .fa-plus {
+            font-size: 15px;
+            margin-left: 40px;
+        }
+
+        @media all and (max-width: 968px) {
+            nav ul {
+                margin-right: 0px;
+                float: left;
+            }
+
+            nav .logo {
+                padding-left: 30px;
+                width: 100%;
+            }
+
+            .show+a,
+            ul {
+                display: none;
+            }
+
+            nav ul li,
+            nav ul ul li {
+                display: block;
+                width: 100%;
+            }
+
+            .show {
+                display: block;
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+                padding: 0 20px;
+                line-height: 70px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .show:hover {
+                color: crimson;
+            }
+
+            .icon {
+                display: block;
+                color: white;
+                position: absolute;
+                top: 0;
+                right: 40px;
+                line-height: 70px;
+                cursor: pointer;
+                font-size: 25px;
+            }
+
+            nav ul ul {
+                top: 70px;
+                border-top: 0px;
+                float: none;
+                position: static;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            nav ul ul a {
+                padding-left: 40px;
+            }
+
+            nav ul ul ul a {
+                padding-left: 80px;
+            }
+
+            nav ul ul ul li {
+                position: static;
+            }
+
+            [id^=btn]:checked+ul {
+                display: block;
+            }
+
+            nav ul ul li {
+                border-bottom: 0px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
+
         <div class="pic">
-            <img src="image/1.jpg" alt="">
+            <img src="images/IMG_2.jpg" alt="">
             <div class="inner">
                 <div class="first"></div>
                 <div class="two"></div>
@@ -73,7 +387,97 @@
                 nostrum, numquam
                 quisquam aperiam ut laudantium non tempore sunt ducimus, in incidunt eius, neque nesciunt quam.</p>
         </div>
-    </div>
+    </div> -->
+
+    <!-- Header -->
+
+    <nav>
+        <div class="logo">Coding Master</div>
+
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+
+        <input type="checkbox" id="btn" />
+
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <label for="btn-1" class="show">Features+</label>
+                <a href="#">Features</a>
+                <input type="checkbox" id="btn-1" />
+                <ul>
+                    <li><a href="#">Feature 1</a></li>
+                    <li><a href="#">Feature 2</a></li>
+                    <li><a href="#">Feature 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <label for="btn-2" class="show">Services+
+                </label>
+                <a href="#">Services</a>
+                <input type="checkbox" id="btn-2" />
+                <ul>
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li>
+                        <label for="btn-3" class="show">More+
+                        </label>
+                        <a href="#">More <span class="fa fa-plus"></span></a>
+                        <input type="checkbox" id="btn-3" />
+                        <ul>
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="#">Submenu 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- JS Script  -->
+    <!-- <script>
+
+        let loadMoreBtn = document.querySelector('#load-more');
+        let loadLessBtn = document.querySelector('#load-less');
+        let currentItem = 4;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.container .box-container .box')];
+            for (var i = currentItem; i < currentItem + 4; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 4;
+
+            if (currentItem >= boxes.length) {
+                loadMoreBtn.style.display = 'none';
+                loadLessBtn.style.display = 'inline-block'
+            }
+        }
+
+        loadLessBtn.onclick = () => {
+                let boxes = [...document.querySelectorAll('.container .box-container .box')];
+                for (var i = currentItem; i > currentItem + 4; i--) {
+                    boxes[i].style.display = 'inline-block';
+                }
+                currentItem -= 4;
+
+                if (currentItem <= boxes.length) {
+                    loadLessBtn.style.display = 'inline-block';
+                }
+            }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="lightbox.min.js"></script>
+<script src="main.js"></script> -->
 </body>
 
 </html>
