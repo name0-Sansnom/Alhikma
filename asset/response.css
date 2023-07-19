@@ -270,7 +270,7 @@
 
 /* General style for phone mode responiveness */
 
-@media screen and (min-width:320px) and (max-width: 460px) {
+@media screen and (min-width:320px) and (max-width: 480px) {
 
     h1 {
         font-size: 18px;
@@ -306,20 +306,20 @@
     }
 
     .section-one {
-        padding-left: 12px;
-        justify-content: space-between;
+        /* padding-left: 12px; */
+        justify-content: space-around;
         height: 80px;
 
     }
 
     .section-one .cart {
-        width: 100px;
+        /* width: 100px; */
         margin-top: -20px;
     }
 
     .section-one h2 {
-        font-size: 14px;
-        padding-left: 10px;
+        font-size: 13px;
+        /* padding-left: 10px; */
     }
 
     .section-one img {
@@ -416,10 +416,11 @@
     }
 
     .ours p {
-        font-size: 14px;
+        font-size: 16px;
         width: 85%;
             margin-left: 25px;
             margin-top: 10px;
+            text-align: justify;
     }
 
     .ours .inner {
@@ -471,12 +472,13 @@
 
     .mess .good img {
         width: 100%;
-        height: 160px;
+        height: 170px;
     }
 
     .mess .good p {
-        font-size: 14px;
-        margin-left: 5px;
+        font-size: 13px;
+        /* margin-left: 5px; */
+        padding: 0.8rem;
     }
 
     .mess .good h1 {
@@ -484,16 +486,29 @@
     }
 
     .wrapper {
-        margin-left: 17px;
+        margin-left: 12px;
+        width: 100%;
+    }
+
+    .slick-dots li.slick-active button:before {
+        display: none;
+    }
+
+    .carousel .slick-dots li button::before {
+        display: none;
     }
 
     .carousel .slick-prev {
         left: -20px;
     }
 
+    .wrapper .carousel .card i {
+        text-align: justify;
+    }
+
 
     .facilities {
-        margin-top: 8px;
+        margin-top: 50px;
 
     }
 
@@ -512,7 +527,7 @@
         margin-top: 15px;
     }
 
-    .room .plays h3 {
+    .room .plays h4 {
         font-size: 14px;
         font-weight: 100;
         margin-top: 10px;
