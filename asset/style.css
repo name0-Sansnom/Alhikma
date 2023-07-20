@@ -927,6 +927,10 @@ input {
     margin-bottom: 20px;
 }
 
+.mission h3 {
+    color: #8d44ae;
+}
+
 .section3 {
     margin-top: 5%;
 }
@@ -1013,7 +1017,7 @@ iconify-icon {
 
 #team {
     width: 20%;
-    height: 310px;
+    /* height: 310px; */
     box-shadow: 5px 5px 5px rgb(232, 232, 232);
     margin-top: 2%;
     margin-right: 2%;

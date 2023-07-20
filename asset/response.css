@@ -141,7 +141,7 @@
     #team {
 
         width: 200px;
-        height: 300px;
+        /* height: 300px; */
         margin-top: 20px;
     }
 
@@ -618,7 +618,7 @@
     }
 
     .belowText {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .statistics {
@@ -635,8 +635,12 @@
     }
 
     .section2 p {
-        font-size: 16px;
+        font-size: 14px;
     }
+
+    /* .values {
+        justify-content: space-between;
+    } */
 
     .mission {
         display: flex;
@@ -707,7 +711,7 @@
     #team {
 
         width: 40%;
-        height: 160px;
+        /* height: 160px; */
         margin-top: 20px;
     }
 
@@ -971,10 +975,12 @@
 
     .frames .frame-left iframe {
         height: 350px;
+        width: 380px;
     }
 
     .frames .frame-right iframe {
         height: 150px;
+        width: 380px;
     }
 
     .iframe-box h4 {
