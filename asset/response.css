@@ -344,9 +344,14 @@
 
     }
 
+    .five img {
+        height: 130px;
+        width: 130px;
+    }
+
     .five p {
-        padding: 20px;
-        font-size: 14px;
+        padding: 18px;
+        font-size: 13px;
     }
 
     .five {
@@ -370,8 +375,9 @@
 
     .v_button {
         margin-left: -10px;
-        margin-bottom: 15px;
-        font-size: 12px;
+        /* margin-bottom: 15px;
+        font-size: 12px; */
+        padding: 10px;
     }
 
     .founder {
@@ -743,6 +749,10 @@
         width: 80%;
     }
 
+    .line {
+        margin-left: 10rem;
+    }
+
     .activities {
         margin-top: 30px;
     }
@@ -752,7 +762,7 @@
     }
 
     .grid .program {
-        height: 330px;
+        height: auto;
         width: 90%;
         margin-left: 20px;
         margin-bottom: 50px;
