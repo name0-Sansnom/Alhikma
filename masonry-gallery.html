@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="lightbox.css"> -->
+  <link rel="stylesheet" href="lightbox.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .body {
+      margin: 0;
+      /* padding: 0; */
+    }
+
+    /* .ligne {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      display: grid;
+      grid-template-colones: repeat(auto-fit, minmax(200px, 1fr));
+      grid-auto-lignes: 250px;
+      grid-auto-flow: dense;
+      grid-gap: 20px;
+    }
+
+    .ligne .colone {
+      position: relative;
+      background-color: #efefef;
+      overflow: hidden;
+    }
+
+    .ligne .colone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .ligne .colone:hover img {
+      transform: scale(1.1);
+    }
+
+    .ligne .colone a {
+      cursor: zoom-in;
+    }
+
+    .ligne .colone:nth-child(3n - 2) {
+      grid-colone: span 2;
+      grid-ligne: span 2;
+    } */
+
+    /* gallery with different view style start */
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .ligne {
+      display: -ms-flexbox;
+      /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+      width: 70%;
+      margin: auto;
+    }
+
+    /* Create two equal colones that sits next to each other */
+    .colone {
+      -ms-flex: 50%;
+      /* IE 10 */
+      flex: 25%;
+      padding: 0 4px;
+
+    }
+
+    .colone img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    /* recent event style start*/
+  
+    .re-events {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgb(176, 60, 197, 8.78), rgb(176, 60, 197, 0.6)), url('image/vec1.jpg');
+      background-size: cover;
+    }
+
+    /* Styling the left floating section */
+    .re-events .leftBox {
+      width: 50%;
+      height: 100%;
+      float: left;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+
+    /* Styling the background of
+            left floating section */
+    .re-events .leftBox .contant {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      transition: .5s;
+    }
+
+    /* Styling the hover effect 
+            of left floating section */
+    .re-events .leftBox .contant:hover {
+      background: #e91e63;
+    }
+
+    /* Styling the header of left
+            floating section */
+    .re-events .leftBox .contant h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+
+    /* Styling the paragraph of
+            left floating section */
+    .re-events .leftBox .contant p {
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    /* Styling the three events section */
+    .re-events .events {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      float: right;
+      box-sizing: border-box;
+    }
+
+    /* Styling the links of
+        the events section */
+    .re-events .events ul {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    /* Styling the lists of the event section */
+    .re-events .events ul li {
+      list-style: none;
+      background: #fff;
+      box-sizing: border-box;
+      height: 200px;
+      margin: 15px 0;
+    }
+
+    /* Styling the time class of events section */
+    .re-events .events ul li .time {
+      position: relative;
+      padding: 20px;
+      background: #262626;
+      box-sizing: border-box;
+      width: 30%;
+      height: 100%;
+      float: left;
+      text-align: center;
+      transition: .5s;
+    }
+
+    /* Styling the hover effect
+            of events section */
+    .re-events .events ul li:hover .time {
+      background: #e91e63;
+    }
+
+    /* Styling the header of time
+            class of events section */
+    .re-events .events ul li .time h2 {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 60px;
+      line-height: 30px;
+    }
+
+    /* Styling the texts of time
+        class of events section */
+    .re-events .events ul li .time h2 span {
+      font-size: 30px;
+    }
+
+    /* Styling the details
+        class of events section */
+    .re-events .events ul li .details {
+      padding: 20px;
+      background: #fff;
+      box-sizing: border-box;
+      width: 70%;
+      height: 100%;
+      float: left;
+    }
+
+    /* Styling the header of the
+        details class of events section */
+    .re-events .events ul li .details h3 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+    }
+
+    /* Styling the lists of details
+        class of events section */
+    .re-events .events ul li .details p {
+      position: relative;
+      margin: 10px 0 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    /* Styling the links of details
+        class of events section */
+    .re-events .events ul li .details a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 1.5px solid #262626;
+      margin-top: 8px;
+      font-size: 18px;
+      transition: .5s;
+    }
+
+    /* Styling the details class's hover effect */
+    .re-events .events ul li .details a:hover {
+      background: #e91e63;
+      color: #fff;
+      border-color: #e91e63;
+    }
+
+    /* upcoming .events */
+    .content {
+      padding-bottom: 49px;
+      vertical-align: top;
+    }
+
+    .upcom-event-box {
+      width: 1170px;
+      vertical-align: top;
+      margin-right: auto;
+      margin-left: auto;
+      zoom: 1;
+
+    }
+
+    .upcom-event-box:before,
+    .upcom-event-box:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+
+    .upcoming {
+      margin-left: -30px;
+      zoom: 1;
+    }
+
+    .upcoming:before,
+    .upcoming:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+
+    .upcoming:after {
+      clear: both;
+    }
+
+    .grid_4 {
+      width: 370px;
+      float: left;
+      min-height: 1px;
+      margin-left: 30px;
+    }
+
+    .banner {
+      padding-top: 49px;
+    }
+
+    .gall_block {
+      background-color: #f1f0f1;
+      padding: 1px;
+    }
+
+    .gall_block img {
+      max-width: 100%;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+      vertical-align: top;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .bann_capt {
+      background-color: #aad4b3;
+      color: #fff;
+      padding-bottom: 22px;
+      text-align: center;
+      font: bold 36px/48px 'Economica', sans-serif;
+    }
+
+    .bann_title {
+      padding: 6px 0 18px;
+      width: 194px;
+      margin: 0 auto 2px;
+      background: url(images/bann_sep.png) 0 bottom repeat-x;
+    }
+
+    .bann_capt a {
+      font-size: 20px;
+      text-decoration: none;
+      color: inherit;
+      outline: none;
+      transition: 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- top navbar -->
+  <div class="top">
+    <div class="top-nav">
+      <div class="mail">
+        <a href=""><i class="fa-solid fa-phone"></i></a>
+        <p>info@alhikmahislamicmontessori.com</p>
+
+      </div>
+      <div class="phone">
+
+        <a href=""><i class="fa-solid fa-envelope"></i></a>
+        <p>+233 0320233000/+233 530220204</p>
+      </div>
+    </div>
+
+    <div class="social">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+  </div>
+
+  <!-- for placing navbar oon top of the slider in responsive mode  -->
+  <div class="menu-top">
+    <!-- Responsive Header -->
+    <section>
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="image/Logo-300x254.jpg" alt="">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu">
+
+          <a href="#" class="menu-trigger"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </header>
+    </section>
+    <!-- navbar ends here -->
+
+    <!-- upcoming events -->
+    <section class="content">]
+      <center>
+        <h1>upcoming Events</h1>
+      </center>
+      <div class="upcom-event-box">
+        <div class="upcoming">
+          <div class="grid_4">
+            <div class="banner">
+              <div class="gall_block">
+                <img src="images/page1_img1.jpg" alt="">
+                <div class="bann_capt ">
+                  <div class="maxheight" style="height: 331px;">
+                    <img src="images/icon1.png" alt="">
+                    <div class="bann_title">Traditional Cuisine</div>
+                    <a href="#">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid_4">
+            <div class="banner">
+              <div class="gall_block">
+                <div class="bann_capt  bn__1">
+                  <div class="maxheight">
+                    <img src="images/icon2.png" alt="">
+                    <div class="bann_title">Kid’s &amp; Vegan Menu</div>
+                    <a href="#">more</a>
+                  </div>
+                </div>
+                <img src="images/page1_img2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="grid_4">
+            <div class="banner ">
+              <div class="gall_block">
+                <img src="images/page1_img3.jpg" alt="">
+                <div class="bann_capt  bn__2">
+                  <div class="maxheight">
+                    <img src="images/icon3.png" alt="">
+                    <div class="bann_title">Happy Hours <br> &amp; Offers</div>
+                    <a href="#">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- recent events section -->
+    <section class="re-events">
+      <div class="leftBox">
+        <div class="contant">
+          <h1>
+            Events and Shows
+          </h1>
+
+          <p>
+            With the idea of imparting programming
+            knowledge, Mr. Sandeep Jain, an IIT
+            Roorkee alumnus started a dream,
+            GeeksforGeeks. Whether programming
+            excites you or you feel stifled,
+            wondering how to prepare for
+            interview questions or
+            how to ace data structures and
+            algorithms, GeeksforGeeks is a
+            one-stop solution. With every
+            tick of time, we are adding arupcomings
+            in our quiver. From articles on
+            various computer science subjects
+            to programming problems for practice,
+            from basic to premium courses, from
+            technologies to entrance examinations,
+            we have been building ample content
+            with superior quality. In a short
+            span, we have built a community of
+            1 Million+ Geeks around the world, 20,000+
+            Contributors and 500+ Campus Ambassadors
+            in various colleges across the nation.
+            Our success stories include a lot of
+            students who benefitted in their
+            placements and landed jobs at tech
+            giants. Our vision is to build a gigantic
+            network of geeks and we are only a
+            fraction of it yet.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="events">
+        <ul>
+          <li>
+            <div class="time">
+              <h2>
+                15 <br><span>March</span>
+              </h2>
+            </div>
+            <div class="details">
+              <h3>
+                Where is the event happening?
+              </h3>
+
+              <p>
+                With the idea of imparting programming
+                knowledge, Mr. Sandeep Jain, an IIT
+                Roorkee alumnus started a dream,
+                GeeksforGeeks. Whether programming
+                excites you or you feel stifled,
+                how to ace data structures and
+                algorithms, GeeksforGeeks is a
+                one-stop solution.
+              </p>
+
+
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both;"></div>
+          </li>
+
+          <li>
+            <div class="time">
+              <h2>
+                27 <br><span>May</span>
+              </h2>
+            </div>
+            <div class="details">
+              <h3>
+                Where is the event happening?
+              </h3>
+
+              <p>
+                With the idea of imparting programming
+                knowledge, Mr. Sandeep Jain, an IIT
+                Roorkee alumnus started a dream,
+                GeeksforGeeks. Whether programming
+                excites you or you feel stifled,
+                how to ace data structures and
+                algorithms, GeeksforGeeks is a
+                one-stop solution.
+              </p>
+
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+
+          <li>
+            <div class="time">
+              <h2>
+                12 <br><span>August</span>
+              </h2>
+            </div>
+            <div class="details">
+              <h3>
+                Where is the event happening?
+              </h3>
+
+              <p>
+                With the idea of imparting programming
+                knowledge, Mr. Sandeep Jain, an IIT
+                Roorkee alumnus started a dream,
+                GeeksforGeeks. Whether programming
+                excites you or you feel stifled,
+                how to ace data structures and
+                algorithms, GeeksforGeeks is a
+                one-stop solution.
+              </p>
+
+
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- masonry lightbox grid-gallery -->
+    <!-- Header -->
+    <div class="header" id="myHeader">
+      <h1>Image Grid</h1>
+      <p>Click on the buttons to change the grid view.</p>
+      <!-- <button class="btn" onclick="one()">1</button> -->
+      <button class="btn active" onclick="two()"><i class="fa fa-bars"></i> List</button>
+      <button class="btn" onclick="four()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+
+    <div class="ligne">
+      <div class="colone">
+        <a data-lightbox="gridImage" href="images/IMG_1.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_1.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_2.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_2.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_3.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_3.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_4.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_4.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_5.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_5.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_6.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_6.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_7.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_7.jpg" alt="">
+        </a>
+      </div>
+
+       <div class="colone">
+        <a data-lightbox="gridImage" href="images/IMG_8.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_8.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_9.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_9.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_10.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_10.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_11.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_11.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_12.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_12.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_13.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_13.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_28.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_28.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="colone">
+        <a data-lightbox="gridImage" href="images/IMG_14.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_14.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_15.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_15.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_16.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_16.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_17.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_17.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_18.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_18.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_19.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_19.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_20.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_20.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="colone">
+        <a data-lightbox="gridImage" href="images/IMG_21.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_21.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_22.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_22.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_23.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_23.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_24.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_24.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_25.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_25.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_26.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_26.jpg" alt="">
+        </a>
+
+        <a data-lightbox="gridImage" href="images/IMG_27.jpg" data-title="Al-Hikmah">
+          <img src="images/IMG_27.jpg" alt="">
+        </a>
+      </div>
+
+    </div> 
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+    <!-- Footer layer Start -->
+    <div class="footer">
+      <div class="box-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+          <path class="elementor-shape-fill"
+            d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z" />
+          <path class="elementor-shape-fill"
+            d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z" />
+          <path class="elementor-shape-fill"
+            d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z" />
+          <path class="elementor-shape-fill"
+            d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z" />
+          <path class="elementor-shape-fill"
+            d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z" />
+          <path class="elementor-shape-fill"
+            d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z" />
+          <path class="elementor-shape-fill"
+            d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z" />
+          <path class="elementor-shape-fill"
+            d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z" />
+          <path class="elementor-shape-fill"
+            d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z" />
+        </svg>
+      </div>
+      <div class="upper">
+        <div class="logo-second">
+          <img src="image/footer.png" alt="">
+          <h4>Bring your wards for the best circular <br> education
+            with professional teachers</h4>
+        </div>
+
+        <div class="contact-second">
+          <h1 style="margin-right: 80px;">Contact Us:</h1>
+          <div class="icons">
+            <div class="icon-side">
+              <a href=""><i class="fa-solid fa-phone"></i></a>
+              <p>info@alhikmahislamicmontessori.com</p>
+            </div>
+
+            <div class="icon-side">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <p>+233 0320233000/+233 530220204</p>
+            </div>
+
+            <div class="icon-side">
+              <a href=""><i class="fa-solid fa-location-dot"></i></a>
+              <p>Ashaley Botwe School Junction</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-second">
+          <h1>Let's Get in Touch</h1>
+
+          <div class="icons-second">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="doc">
+        <p>Copyrights &copy;2023 Al-Hikmah Islamic Montessori School</p>
+      </div>
+    </div>
+
+
+    <!-- Responsive header js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      // Get the elements with class="colone"
+      var elements = document.getElementsByClassName("colone");
+
+      // Declare a loop variable
+      var i;
+
+      // Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "50%";  // IE10
+          elements[i].style.flex = "50%";
+        }
+      }
+
+      // Four images side by side
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "25%";  // IE10
+          elements[i].style.flex = "25%";
+        }
+      }
+
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myHeader");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script src="java.js"></script>
+    <script src="lightbox.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
